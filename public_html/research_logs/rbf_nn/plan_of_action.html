@@ -1,0 +1,76 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mohit Jain</title>
+<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script src="../static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+ <link href="../static/css/dashboard.css" rel="stylesheet">
+<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Curriculum Vitae Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+</head>
+<body>
+<!-- header -->
+<div class="col-sm-3 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1><a style="color:white" href="https://researchweb.iiit.ac.in/~mohit.jain">Mohit Jain</a></h1> 
+		 </div>
+		<div class="details">
+			<h3>RBF-NN's</h3> 
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="../static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="../static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--pop-up-box-->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+		 <div class="skills">
+			 <p style="float:right; background-color:#e9a820"><a href="../index.html">Back to Homepage</a></p><br/>
+		 	 <div class="copywrite" style="float:right">
+				 <p>© 2015. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
+			 </div>	
+		 </div>
+		 <div class="company">
+			 <h3 class="clr1">Plan of Action</h3>
+			 <div class="company_details">
+				 <h4>Summary of Discussions<span></span></h4>
+				 <p class="cmpny1">Our intuition of using a RBF layer at the top of the deep network is based on the recent papers. 
+(<a target="_blank" href="http://arxiv.org/pdf/1412.6572.pdf">This</a> paper by Goodfellow et al discussed how RBF networks are naturally robust to fooling. <a target="_blank" href="http://arxiv.org/pdf/1412.5068v4.pdf">This</a> paper by Gu & Rigazio discusses a similar idea of using contractive autoencoders to tackle the adversarial examples, but the overall performance drops in these cases.)<br/>
+<br/> 
+
+We want to map our original input X using a RBF layer to phi(X). The hope is that this mapping would leave us with a phi(alpha-X) for adversarial examples which would be approximately equal to phi(X).<br/>
+<br/> 
+  <span style="padding-left:40%;"<b><i>[phi(alpha-X) ~ phi(X)] </i></b></span>
+<br/><br/>
+RBF networks are naturally immune to adversarial examples as they have a low confidence measure when they are fooled (i.e. don't understand the input).
+<br/>
+<br/> 
+One approach to generate adversarial examples is to maximize the score for a particular (incorrect) class w.r.t. to a perturbation \eta of the input. It just so happens that we find \eta is quite small (so the perturbed version looks like the non-perturbed version) when we use normal activation functions (which are linear). Linear units achieve a high recall by responding with high confidence even in areas not understood well by the system and hence only a small perturbation is good enough to tilt the final outcome. However, the RBF network has a poor overall performance due to this inhibition to predict on uncharted territory keeping a high precision. By only adding a RBF activation to the top of our NN, we hope to hit a balance between the precision-recall properties of these nonlinear-linear activations.<br/>
+<br/> 
+
+The overall intuition here is that it is hard to move towards all the RBF centers simultaneously, so only one of the outputs of the RBF layer can change significantly at a time. Hence, it would be difficult to adversarially train against such a model.<br/>
+				 </p>
+			 </div>	
+		 </div>
+	 </div>
+</div>
+</body>
+</html>

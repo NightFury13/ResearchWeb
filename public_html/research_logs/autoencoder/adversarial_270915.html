@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+
+<head>
+
+<title>Research Logs</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="Author" content="httphotos">
+
+<style type="text/css">
+
+	h1, h2 {
+
+		border: rgb(102, 0, 0) 2px solid;
+
+		border-left: 1px none;
+
+		border-right: 1px none;
+
+		border-top: 1px none;
+
+		margin-bottom: 1em;
+
+		margin-left: -10px;
+
+		margin-right: 0px;
+
+		padding: 20px;
+
+		width: 98%;
+
+		display: block;
+
+		color:  rgb(102, 0, 0);
+
+		font-size: 18px;
+
+		font-weight: bold;
+
+		letter-spacing: 4px;
+
+		text-align: right;
+
+		height: 21px;
+
+		position: relative;
+
+	}
+
+	h2:first-letter {
+
+		color: rgb(102, 0, 0);
+
+		font-weight: bold;
+
+		font-size: 24pt;
+
+	}
+
+	a, a:link,a:visited,a:active { 
+
+		color: rgb(102, 0, 0);
+
+		text-decoration: none; 
+
+	} 
+
+	a:hover {
+
+		color: rgb(255, 0, 0);
+
+		text-decoration: none;
+
+	}
+
+	body {
+
+		font-family: Trebuchet MS, sans-serif; font-size: larger;
+
+		margin-bottom: 20px;
+
+		margin-top: 0px;
+
+		color: rgb(102, 0, 0);
+
+
+	}
+
+	td {
+
+		text-align: center;
+
+	}
+
+	img {
+
+		border-style: solid;
+
+		border-color: rgb(0,0,0);
+
+		border-width: 0px;
+
+		width: 100%
+
+	}
+
+	table.center {margin-left:auto; margin-right:auto;}
+
+	#httphotos {
+
+		position: absolute;
+
+		right: 0px;
+
+		bottom: 20px;
+
+		margin: 0px;
+
+		padding: 0px;
+
+	}
+
+
+
+	#httphotos img {
+
+		border: 0px;
+
+	}
+
+</style>
+<!-- Load c3.css -->
+<link href="static/c3-0.4.10/c3.css" rel="stylesheet" type="text/css">
+<!-- Load d3.js and c3.js -->
+<script src="static/d3/d3.min.js" charset="utf-8"></script>
+<script src="static/c3-0.4.10/c3.min.js"></script>
+</head>
+
+<body>
+
+<h2>Research Logs</h2>
+
+<div><a href="../index.html">Homepage</a> &raquo;24/9/15 &raquo; Corrected Results</div>
+<br/>
+
+<br/>
+<div>
+	<div name="content" style="width:60%; float:left">
+	<h3>Results</h3>
+	<p>The problem with the results in the previous experiments is resolved! The output of the l2_loss layer of the model seemed to be glitchy. I simply took the output images (output of last decode layer - decode1) and computed the euclidean distance between the original images and the adversarial images created. The results now seem to be much more intuitive but do not really form a decision boundary between the raw images and their corresponding adversaries.
+	<p>The following are the average reconstruction errors for the complete MNIST (60000 images) on the autoencoder trained in previous experiments. Adversarial images have only a little more error than their corresponding raw images.</p>
+	<br/>
+	<p style="font-size:16px">Graph : Loss v/s Epsilon (the amount of change to pixels in adversaries)</p>
+	<div id="chart" style="width:80%"></div>
+        <script>
+        var chart = c3.generate({
+            bindto: '#chart',
+            data: {
+		x: 'eps',
+        	columns: [
+	            ['eps', 1.0, 2.0, 3.0, 4.0, 5.0, 10.0],
+        	    ['raw image loss', 150.52,150.52,150.52,150.52,150.52,150.52],
+	            ['adversary image loss', 125.93, 150.13, 151.08, 151.20, 151.32, 151.84]
+        	]
+            },
+        });
+        </script>
+	<br/>
+	<p>The reconstruction loss does seem to be increasing with the increase in the amount of adversarial noise added (i.e. increase in the eps value).</p>
+	</div>
+	<div width="40%" style="float:right">
+                <img src="output_16-9-15/autoencoder-visualize.png" height="">
+        </div>
+</div>
+</body>
+
+</html>
+

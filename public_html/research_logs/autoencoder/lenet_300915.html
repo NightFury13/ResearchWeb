@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+
+<head>
+
+<title>Research Logs</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="Author" content="httphotos">
+
+<style type="text/css">
+
+	h1, h2 {
+
+		border: rgb(102, 0, 0) 2px solid;
+
+		border-left: 1px none;
+
+		border-right: 1px none;
+
+		border-top: 1px none;
+
+		margin-bottom: 1em;
+
+		margin-left: -10px;
+
+		margin-right: 0px;
+
+		padding: 20px;
+
+		width: 98%;
+
+		display: block;
+
+		color:  rgb(102, 0, 0);
+
+		font-size: 18px;
+
+		font-weight: bold;
+
+		letter-spacing: 4px;
+
+		text-align: right;
+
+		height: 21px;
+
+		position: relative;
+
+	}
+
+	h2:first-letter {
+
+		color: rgb(102, 0, 0);
+
+		font-weight: bold;
+
+		font-size: 24pt;
+
+	}
+
+	a, a:link,a:visited,a:active { 
+
+		color: rgb(102, 0, 0);
+
+		text-decoration: none; 
+
+	} 
+
+	a:hover {
+
+		color: rgb(255, 0, 0);
+
+		text-decoration: none;
+
+	}
+
+	body {
+
+		font-family: Trebuchet MS, sans-serif; font-size: larger;
+
+		margin-bottom: 20px;
+
+		margin-top: 0px;
+
+		color: rgb(102, 0, 0);
+
+
+	}
+
+	td {
+
+		text-align: center;
+
+	}
+
+	img {
+
+		border-style: solid;
+
+		border-color: rgb(0,0,0);
+
+		border-width: 0px;
+
+		width: 100%
+
+	}
+
+	table.center {margin-left:auto; margin-right:auto;}
+
+	#httphotos {
+
+		position: absolute;
+
+		right: 0px;
+
+		bottom: 20px;
+
+		margin: 0px;
+
+		padding: 0px;
+
+	}
+
+
+
+	#httphotos img {
+
+		border: 0px;
+
+	}
+
+</style>
+
+<!-- Load c3.css -->
+<link href="static/c3-0.4.10/c3.css" rel="stylesheet" type="text/css">
+
+<!-- Load d3.js and c3.js -->
+<script src="static/d3/d3.min.js" charset="utf-8"></script>
+<script src="static/c3-0.4.10/c3.min.js"></script>
+
+</head>
+
+<body>
+
+<h2>Research Logs</h2>
+
+<div><a href="../index.html">Homepage</a> &raquo; 30/9/15 &raquo; LeNet with improved accuracy</div>
+<br/>
+
+<div name="info">
+	<div width="50%" style="float:left">
+	<p>The LeNet model was trained on the MNIST dataset with the following parameters.</p>
+	<ul>
+		<li>base_lr: 0.01</li>
+		<li>lr_policy: "inv"</li>
+		<li>gamma: 0.0001</li>
+		<li>power: 0.75</li>
+		<li>stepsize: 20000</li>
+		<li>max_iter: 10000</li>
+		<li>weight_decay: 0.0005</li>
+		<li>momentum: 0.9</li>
+		<li>solver_mode: CPU</li>
+	</ul>
+	<p>Loss v/s Iteration (x*500) curve :</p>
+	<div id="chart"></div>
+	<script>
+	var chart = c3.generate({
+	    bindto: '#chart',
+	    data: {
+	      columns: [
+	   		['Loss', 2.30312, 0.0809876, 0.0562109, 0.0448982, 0.0420255, 0.0423055, 0.0382713, 0.0395958, 0.0299981, 0.0315188, 0.0284073, 0.0314669, 0.0265983, 0.0300704, 0.0272467, 0.0310725, 0.0271782, 0.0288445, 0.0267457, 0.03109, 0.026581],
+			['Accuracy', 0.1282, 0.9748, 0.9821, 0.9852, 0.9861, 0.9857, 0.9877, 0.9862, 0.9895, 0.9905, 0.9892, 0.9897, 0.9907, 0.9907, 0.9908, 0.9896, 0.9911, 0.9903, 0.9911, 0.9896, 0.9915]
+      	    	],
+	      type: 'area'
+    	    },
+	});
+	</script>
+	
+	<i>Results</i>
+	<ul>
+		<li> Validation Loss = 0.027 </li>
+		<li> Validation Accuracy = 99.15% </li>
+	</ul>
+	</div>
+	<div width="50%" style="float:right">
+		<img src="output_30-9-15/autoencoder-visualize.png" height="">	
+	</div>
+</div>
+</body>
+
+</html>
+

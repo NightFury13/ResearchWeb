@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+
+<head>
+
+<title>Research Logs</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="Author" content="httphotos">
+
+<style type="text/css">
+
+	h1, h2 {
+
+		border: rgb(102, 0, 0) 2px solid;
+
+		border-left: 1px none;
+
+		border-right: 1px none;
+
+		border-top: 1px none;
+
+		margin-bottom: 1em;
+
+		margin-left: -10px;
+
+		margin-right: 0px;
+
+		padding: 20px;
+
+		width: 98%;
+
+		display: block;
+
+		color:  rgb(102, 0, 0);
+
+		font-size: 18px;
+
+		font-weight: bold;
+
+		letter-spacing: 4px;
+
+		text-align: right;
+
+		height: 21px;
+
+		position: relative;
+
+	}
+
+	h2:first-letter {
+
+		color: rgb(102, 0, 0);
+
+		font-weight: bold;
+
+		font-size: 24pt;
+
+	}
+
+	a, a:link,a:visited,a:active { 
+
+		color: rgb(102, 0, 0);
+
+		text-decoration: none; 
+
+	} 
+
+	a:hover {
+
+		color: rgb(255, 0, 0);
+
+		text-decoration: none;
+
+	}
+
+	body {
+
+		font-family: Trebuchet MS, sans-serif; font-size: larger;
+
+		margin-bottom: 20px;
+
+		margin-top: 0px;
+
+		color: rgb(102, 0, 0);
+
+
+	}
+
+	td {
+
+		text-align: center;
+
+	}
+
+	img {
+
+		border-style: solid;
+
+		border-color: rgb(0,0,0);
+
+		border-width: 0px;
+
+		width: 100%
+
+	}
+
+	table.center {margin-left:auto; margin-right:auto;}
+
+	#httphotos {
+
+		position: absolute;
+
+		right: 0px;
+
+		bottom: 20px;
+
+		margin: 0px;
+
+		padding: 0px;
+
+	}
+
+
+
+	#httphotos img {
+
+		border: 0px;
+
+	}
+
+</style>
+
+<!-- Load c3.css -->
+<link href="static/c3-0.4.10/c3.css" rel="stylesheet" type="text/css">
+
+<!-- Load d3.js and c3.js -->
+<script src="static/d3/d3.min.js" charset="utf-8"></script>
+<script src="static/c3-0.4.10/c3.min.js"></script>
+
+</head>
+
+<body>
+
+<h2>Research Logs</h2>
+
+<div><a href="../index.html">Homepage</a> &raquo; 16/9/15 &raquo; Autoencoder Experiment (Michael's Parameters)</div>
+<br/>
+
+<div name="info">
+	<div width="50%" style="float:left">
+	<p>The autoencoder was trained on the MNIST dataset with the following parameters.</p>
+	<ul>
+		<li>base_lr: 0.01</li>
+		<li>lr_policy: "step"</li>
+		<li>gamma: 0.1</li>
+		<li>stepsize: 20000</li>
+		<li>max_iter: 50000 <i>(instead of 65000 as in last experiment)</i></li>
+		<li>weight_decay: 0.0000 <i>(instead of 0.0005 as in last experiment)</i></li>
+		<li>momentum: 0.0 <i>(instead of 0.9 as in last experiment)</i></li>
+		<li>solver_mode: CPU</li>
+	</ul>
+	<p>L2-Loss v/s Iteration (x-axis * 500) curve :</p>
+	<div id="chart"></div>
+	<script>
+	var chart = c3.generate({
+	    bindto: '#chart',
+	    data: {
+	      columns: [
+	        ['loss', 40.7564, 11.4321, 7.77526, 5.93671, 4.88942, 4.01218, 3.95593, 3.43841, 3.25978, 3.10853, 3.00823, 2.77433, 2.6496, 2.57533, 2.41568, 2.30726, 2.57159, 2.15367, 2.22392, 2.16346, 2.06133, 1.99513, 2.06582, 1.94251, 1.85009, 1.84685, 1.95289, 1.72611, 1.91256, 1.77976, 1.69314, 1.63059, 1.61794, 1.62717, 1.62814, 1.59823, 1.68945, 1.47602, 1.55553, 1.54298, 1.52407, 1.41378, 1.43303, 1.45311, 1.40623, 1.47775, 1.56433, 1.38429, 1.47828, 1.48265, 1.42367, 1.39249, 1.41322, 1.43161, 1.38644, 1.46048, 1.54461, 1.36647, 1.46007, 1.46346, 1.40518, 1.37331, 1.39458, 1.41329, 1.36817, 1.44347, 1.52743, 1.35072, 1.44275, 1.4463, 1.38757, 1.35552, 1.37809, 1.39568, 1.35122, 1.42909, 1.50996, 1.33481, 1.42634, 1.42933, 1.37047, 1.33937, 1.36372, 1.38202, 1.33946, 1.41944, 1.50024, 1.32748, 1.42024, 1.4247, 1.36771, 1.3377, 1.36206, 1.38039, 1.33774, 1.41775, 1.49864, 1.32603, 1.41849, 1.42309, 1.36609],
+      	    	],
+	      type: 'area'
+    	    },
+	});
+	</script>
+	
+	<i>Results</i>
+	<ul>
+		<li> L2 error = 1.36609 <i>(instead of 2.02923 as in last experiment)</i> </li>
+	</ul>
+	</div>
+	<div width="50%" style="float:right">
+		<img src="output_16-9-15/autoencoder-visualize.png" height="">	
+	</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<div>
+<p>The following are the reconstructed outputs for the autoencoder trained on MNIST dataset.</p>
+
+<table class="center">
+	<div name="images">
+		<tr>
+			<td>
+				<img src="output_16-9-15/0.png">
+				<img src="output_16-9-15/0_auto.png">
+			</td>
+			<td>	
+				<img src="output_16-9-15/1.png">
+				<img src="output_16-9-15/1_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/2.png">
+				<img src="output_16-9-15/2_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/3.png">
+				<img src="output_16-9-15/3_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/4.png">
+				<img src="output_16-9-15/4_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/5.png">
+				<img src="output_16-9-15/5_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/6.png">
+				<img src="output_16-9-15/6_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/7.png">
+				<img src="output_16-9-15/7_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/8.png">
+				<img src="output_16-9-15/8_auto.png">
+			<td>
+			<td>
+				<img src="output_16-9-15/9.png">
+				<img src="output_16-9-15/9_auto.png">
+			<td>
+		</tr>
+	</div>
+
+</table></div>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,17 @@
+raw_image  : 1.0 : 143.523101102 
+adv_image  : 1.0 : 147.49147867
+
+raw_image  : 2.0 : 
+adv_image  : 2.0 : 150.577791241 
+
+raw_image  : 3.0 : 
+adv_image  : 3.0 : 151.97705524
+
+raw_image  : 4.0 : 
+adv_image  : 4.0 : 153.885231884
+
+raw_image  : 5.0 :  
+adv_image  : 5.0 : 157.615548556
+
+raw_image : 10.0 : 
+adv_image : 10.0 : 170.267771818

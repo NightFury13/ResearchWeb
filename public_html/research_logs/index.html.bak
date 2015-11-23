@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+
+<head>
+
+<title>Research Logs</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="Author" content="httphotos">
+
+<style type="text/css">
+
+	h1, h2 {
+
+		border: rgb(102, 0, 0) 2px solid;
+
+		border-left: 1px none;
+
+		border-right: 1px none;
+
+		border-top: 1px none;
+
+		margin-bottom: 1em;
+
+		margin-left: -10px;
+
+		margin-right: 0px;
+
+		padding: 20px;
+
+		width: 98%;
+
+		display: block;
+
+		color:  rgb(102, 0, 0);
+
+		font-size: 18px;
+
+		font-weight: bold;
+
+		letter-spacing: 4px;
+
+		text-align: right;
+
+		height: 21px;
+
+		position: relative;
+
+	}
+
+	h2:first-letter {
+
+		color: rgb(102, 0, 0);
+
+		font-weight: bold;
+
+		font-size: 24pt;
+
+	}
+
+	a, a:link,a:visited,a:active { 
+
+		color: rgb(102, 0, 0);
+
+		text-decoration: none; 
+
+	} 
+
+	a:hover {
+
+		color: rgb(255, 0, 0);
+
+		text-decoration: none;
+
+	}
+
+	body {
+
+		font-family: Trebuchet MS, sans-serif; font-size: larger;
+
+		margin-bottom: 20px;
+
+		margin-top: 0px;
+
+		color: rgb(102, 0, 0);
+
+
+	}
+
+	td {
+
+		text-align: center;
+
+	}
+
+	img {
+
+		border-style: solid;
+
+		border-color: rgb(0,0,0);
+
+		border-width: 0px;
+
+		width: 100%
+
+	}
+
+	table.center {margin-left:auto; margin-right:auto;}
+
+	#httphotos {
+
+		position: absolute;
+
+		right: 0px;
+
+		bottom: 20px;
+
+		margin: 0px;
+
+		padding: 0px;
+
+	}
+
+
+
+	#httphotos img {
+
+		border: 0px;
+
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Research Logs</h2>
+
+<div>Homepage &raquo; Table of Contents</div>
+<br/>
+
+<div name="logs">
+        <div width="50%" style="float:left">
+        	<ul>
+			<hr/>
+			<span style="color:orange">Iteration-2 : Fixing results.</span>
+			<hr/><br/>
+                	<li><a href="adversarial_300915.html">30/09/15 : Adversarial Images and their reconstruction errors</a></li><br/>
+                	<li><a href="lenet_300915.html">30/09/15 : Improved LeNet model accuracy</a></li><br/>
+			<hr/>
+			<span style="color:orange">Iteration-1 : Getting the experiment pipelines ready.</span>
+			<hr/><br/>
+                	<li><a href="adversarial_270915.html">27/09/15 : Corrected Results!</a></li><br/>
+                	<li><a href="adversarial_240915.html">24/09/15 : Results rescaled and Sanity Checks, still faulty.</a></li><br/>
+                	<li><a href="adversarial_210915.html">21/09/15 : Results & Adversarial Images using LeNet on MNIST</a></li><br/>
+                	<li><a href="autoencoder_160915.html">16/09/15 : Autoencoder using Michael's training parameters</a></li><br/>
+                	<li><a href="autoencoder_010915.html">01/09/15 : Autoencoder using Caffe built-in example</a></li><br/>
+			<hr/>
+			<hr/>
+        	</ul>
+        </div>
+</div>
+<div name="info">
+	<div width="50%" style="float:right; padding-right:100px;">
+		<div style="text-align:center">
+			<img src="static/images/mohit.jpg" style="height:200px;width:200px">
+		</div>
+		<p style="text-align:center">Mohit Jain</p>
+		<div style="font-size:12px">
+			<pre>
+About   : CS UnderGrad @ IIIT Hyderabad
+
+Email   : mohit.jain@research.iiit.ac.in
+
+Contact : +91-7842662536
+
+Addr    : OBH-268, IIIT Hyderabad, 
+          Gachibowli, Hyderabad, Telangana
+	  India - 500032</pre>
+		</div>
+	</div>  
+</div>
+
+</body>
+</html>
