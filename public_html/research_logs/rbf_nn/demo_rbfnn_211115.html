@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <h1><a style="color:white" href="https://researchweb.iiit.ac.in/~mohit.jain">Mohit Jain</a></h1> 
 		 </div>
 		<div class="details">
-			<h3>RBF-NN's</h3> 
+			<h3>RBF Neural Network</h3> 
 		</div>
 		<div class="clearfix"></div>
 </div>
@@ -49,26 +49,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>	
 		 </div>
 		 <div class="company">
-			 <h3 class="clr1">Plan of Action</h3>
+			 <h3 class="clr1">Demo usage of RBF NN</h3>
 			 <div class="company_details">
-				 <h4>Summary of Discussions<span></span></h4>
-				 <p class="cmpny1">Our intuition of using a RBF layer at the top of the deep network is based on the recent papers. 
-(<a target="_blank" href="http://arxiv.org/pdf/1412.6572.pdf">This</a> paper by Goodfellow et al discussed how RBF networks are naturally robust to fooling. <a target="_blank" href="http://arxiv.org/pdf/1412.5068v4.pdf">This</a> paper by Gu & Rigazio discusses a similar idea of using contractive autoencoders to tackle the adversarial examples, but the overall performance drops in these cases.)<br/>
-<br/> 
-
-We want to map our original input X using a RBF layer to phi(X). The hope is that this mapping would leave us with a phi(alpha-X) for adversarial examples which would be approximately equal to phi(X).<br/>
-<br/> 
-  <span style="padding-left:40%;"<b><i>[phi(alpha-X) ~ phi(X)] </i></b></span>
-<br/><br/>
-RBF networks are naturally immune to adversarial examples as they have a low confidence measure when they are fooled (i.e. don't understand the input).
-<br/>
-<br/> 
-One approach to generate adversarial examples is to maximize the score for a particular (incorrect) class w.r.t. to a perturbation \eta of the input. It just so happens that we find \eta is quite small (so the perturbed version looks like the non-perturbed version) when we use normal activation functions (which are linear). Linear units achieve a high recall by responding with high confidence even in areas not understood well by the system and hence only a small perturbation is good enough to tilt the final outcome. However, the RBF network has a poor overall performance due to this inhibition to predict on uncharted territory keeping a high precision. By only adding a RBF activation to the top of our NN, we hope to hit a balance between the precision-recall properties of these nonlinear-linear activations.<br/>
-<br/> 
-
-The overall intuition here is that it is hard to move towards all the RBF centers simultaneously, so only one of the outputs of the RBF layer can change significantly at a time. Hence, it would be difficult to adversarially train against such a model.<br/>
+				 <p class="cmpny1">The RBF-NN works by first selecting K (currently 10) data-points for each classification category to act as the RBF-centers and then trains the network by trying to minimize the loss of the complete RBF-NN on training manipulating the weights for the output layers.</p>
+				 <p><br/>
+				 A sample run of the RBF-NN on a dummy dataset is as follows.
 				 </p>
-			 </div>	
+				<div style="width:33%; float:left">
+					<img title="Dummy Dataset" src="output_211115/dataset.jpg" width=100%/>
+					<p align="center">Dummy Dataset</p>
+				</div> 
+				<div style="width:33%; float:left">
+				 	<img title="contours of K-NN" width=100% src="output_211115/contour_rbf.jpg"/>
+			 		<p align="center">Countours</p>
+				</div> 
+				<div style="width:33%; float:left">
+					<img title="Classification Boundary" width=100% src="output_211115/rbf_classi_centres.jpg"/>
+					<p align="center">Decision Boundary</p><br/>
+				</div> 
+			 </div>
+			 <h3 class="clr1">Performance on MNIST</h3>
+			 <div class="company_details">
+				<p>The RBF-NN was trained on the 60k training images and the 10k test images and the performance for classification tasks are as follows.<br/><br/>
+				<span style="padding-left:5%">
+					> Training Accuracy : 55418/60000, 92.4%
+				</span><br/>
+				<span style="padding-left:5%">
+					> Testing Accuracy : 9324/10000, 93.2%
+				</span>
+				</p>
+			</div>
 		 </div>
 	 </div>
 </div>

@@ -64,18 +64,97 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					document.getElementById("date").innerHTML = d.toDateString();
 				</script>
 			 </div>
-		  	 <p style="float:right">© 2015. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
+		  	 <p style="float:right">© 2016. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
 		 </div>
 		 <div class="company">
 			 <h3 class="clr2">Current Week</h3>
+			<div class="company_details">
+				 <h4>VQA Adversaries<span>25th Jan'16 - Present</span></h4>
+				 <h6>Study effects of adversarial perturbations on the VQA Model<span style="color:red"> DELAYED</span></h6>
+				 <p>
+				...
+				 </p>
+			 </div>
+			<br/> 
+			<h3 class="clr1">Previous Weeks</h3>
+			<div class="company_details">
+				 <h4>Reading & Discussing<span>12th-19th Jan'16</span></h4>
+				 <h6>Conceptual verification of adversarial pipeline<span style="color:green"> On-Time</span></h6>
+				 <p>
+					This week was spent in verifying the adversarial generation methods and the reason for their existence by re-visiting the papers by Szegedy et al. & Goodfellow et al. The major takeaways are summarized in this <a href="honors/paper_key_points.html">page</a>. <br/>
+					> A presentation was given (TRM) to fellow research students at CVIT.<br/><br/>
+				 </p>
+			 </div>
+ 
+			<div class="company_details">
+				 <h4>Adversarial Image Generation<span>5th-12th Jan'16</span></h4>
+				 <h6>Correcting Adversarial Image Generation Pipeline<span style="color:green"> On-Time</span></h6>
+				 <p>
+					This week was spent correcting the adversarial image generation routines as further experiments depend heavily on the same for proper functioning and correctness of results.<br/><br/>
+					Completed Tasks :<br/>
+						<span style="padding-left:2%">
+						> Correcting Adversarial Image Generation Pipeline. <a href="adver_images/sample_images.html"> #Fooling Images</a><br/>
+						</span>
+						<span style="padding-left:2%">
+						> <a href="honors/robust_dnn_presentation.html">Summarizing Slides</a> of work till now.<br/>
+						</span><br/> 
+				 </p>
+			 </div>
+			
+
 			 <div class="company_details">
-				 <h4>RBF-Neural Networks<span>17th Nov'15 - PRESENT</span></h4>
+				 <h4>RBF-Neural Networks<span>8th - 22nd Dec'15</span></h4>
+				 <h6>Evaluating RBF-NN outputs on Deep Network Pipeline <span style="color:red">DELAYED</span></h6>
+				 <p>
+					Passing the adversarial images through the RBF-NN and then the Deep Network (LeNet) to check for performance improvements on the adversarial classification.<br/>
+					Expected Tasks :<br/>
+						<span style="padding-left:2%">
+						> Computing RBF-NN intermediate outputs.<br/>
+						</span>
+						<span style="padding-left:2%">
+						> Computing adversaries to the intermediate outptus and checking performance.<br/>
+						</span><br/> 
+				 </p>
+			 </div>
+
+ 			 <div class="company_details">
+				 <h4>RBF-Neural Networks<span>1st-8th Dec'15</span></h4>
+				 <h6>Evaluating RBF-NN outputs on Deep Network Pipeline</h6>
+				 <p>
+					Passing the adversarial images through the RBF-NN and then the Deep Network (LeNet) to check for performance improvements on the adversarial classification.<br/>
+					Expected Tasks :<br/>
+						<span style="padding-left:2%">
+						> Computing RBF-NN intermediate outputs.<br/>
+						</span>
+						<span style="padding-left:2%">
+						> Computing adversaries to the intermediate outptus and checking performance.<br/>
+						</span><br/> 
+					Other Idea :<br/>
+						<span style="padding-left:2%">
+						  > Dr. Batra suggessted that as long as we keep using deterministic procedures to pre-process our data, the model can still be gamed. So how about adding random noise to say about 30-40% of the image and then use a denoising-autoencoder on top of it to obtain the rectified image, then apply a deterministic noise-reduction technique and finally pass it to the deep network? This stacked network cannot be gamed using the similar approaches we followed for gaming the previous autoencoder experiments as now the Nash Equilibrium changes and prediction of the output is not possible. (Discuss with mentor prof's) 
+						</span><br/><br/>
+					Miscellaneous :<br/>	
+						<span style="padding-left:2%">
+						> Nvidia DIGITS : Submitted <a href="https://github.com/batra-mlp-lab/DIGITS/pull/7" target="_blank">pull-request</a> for Feature-Extraction tasks.
+						</span><br/>
+						<span style="padding-left:2%">
+						> <a href="honors/robust_dnn_presentation.html">Presentation</a> summarizing work till now.
+						</span><br/>
+				 </p><br/>
+			 </div>
+
+			<!-- End Sem Placeholder -->
+			 <p class="cmpny1"></p>
+			 <p class="cmpny1" style="text-align:center">End-Semester Exams<br/>(24th-30th Nov'15)</p>
+
+			 <div class="company_details">
+				 <h4>RBF-Neural Networks<span>17th-24th Nov'15</span></h4>
 				 <h6>Testing shallow and deep networks</h6>
 				 <p>
-					Building intuition on the working of RBF-Neural Networks with the help of shallow networks (SVM) while playing around with deep RBF-Layer Neural Networks.<br/>
+					Building intuition on the working of RBF-Neural Networks with the help of shallow networks while playing around with deep RBF-Layer Neural Networks.<br/>
 					Results : <br/>
 						<span style="padding-left:2%">
-						> <a href="rbf_nn/results.html">Demo working of RBF-NN</a><br/>
+						> <a href="rbf_nn/demo_rbfnn_211115.html">Demo of RBF-NN</a><br/>
 						</span>
 					References :<br/>
 						<span style="padding-left:2%">
@@ -83,7 +162,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</span>
 				 </p><br/>
 			 </div>
-			 <h3 class="clr1">Previous Weeks</h3>
 			 <div class="company_details">
 				 <h4>RBF-Neural Networks<span>10th-17th Nov'15</span></h4>
 				 <h6>Plan of Action</h6>
