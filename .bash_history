@@ -1,677 +1,3 @@
-ls
-cd public_html/
-ls
-cd web/
-vim index.html 
-mv index.html 1_index.html
-ls
-vim index.html
-vim 1_index.html 
-vim index.html 
-vim 1_index.html 
-mv 1_index.html index.html
-vim index.html 
-vim index.html 
-vim index.html 
-cp index.html working_photo.html
-ls
-vim default.css 
-vim index.html 
-vim default.css 
-vim index.html 
-exit
-ls
-cd public_html/
-ls
-cd web/
-ls
-vim index.html 
-vim index.html 
-exit
-ls
-cd public_html/
-ls
-cd unorthodox/
-ls
-cd audiovideorec/
-ls
-vim index.html 
-rm .index.html.swp 
-vim index.html 
-exit
-ls
-cd public_html/
-ls
-cd unorthodox/
-ls
-cd videoshow/
-ls
-cp default.css fonts.css ../audiovideorec/css/
-cd font
-ls
-cd //
-cd 
-cd public_html/unorthodox/
-ls
-cp -r videoshow/font/* audiovideorec/css/
-cd audiovideorec/
-ls
-cd css/
-ls
-mkdir font
-mv fontawesome-webfont.* FontAwesome.otf font/
-ls
-cd ..
-cd ..
-cd videoshow/
-ls
-vim index
-vim index.html 
-cd ..
-cd audiovideorec/
-ls
-cd css/
-ls
-vim style.css 
-vim default.css 
-ls
-vim style.css 
-cd ..
-ls
-vim index.html 
-exit
-ls
-mv mauz_index.html public_html/
-cd public_html/
-ls
-vim mauz_index.html 
-ls
-ls
-cd web/
-ls
-cd ..
-ls
-mv web/ unorthodox
-ls
-cd unorthodox/
-ls
-mkdir videoshow
-mv * videoshow/
-ls
-cd videoshow/
-ls
-cd ..
-ls
-mkdir audiovideorec
-ls
-cd ..
-ls
-mv mauz_index.html unorthodox/audiovideorec/
-ls
-cd unorthodox/audiovideorec/
-ls
-mv mauz_index.html index.html
-ls
-vim index.html 
-vim style.css
-ls
-mkdir css
-ls
-mv style.css 
-mv style.css css
-ls
-vim index.html 
-ls
-mkdir js
-ls
-cd js/
-vim RecordRTC.js
-ls
-cd ..
-ls
-vim index.html 
-vim index.html 
-vim js/gif.recorder.js
-vim index.html 
-vim index.html 
-ls
-cd public_html/
-ls
-cd unorthodox/
-ls
-cd audiovideorec/
-ls
-ls -a
-rm .index.html.swp 
-ls
-vim index.html 
-cd ..
-ls
-cd videoshow/
-ls
-cd images/
-ls
-cd ..
-ls
-vim default.css 
-vim index
-vim index.html 
-cd ..
-ls
-cd audiovideorec/
-vim index.html 
-ls
-cd public_html/
-ls
-cd unorthodox/
-ls
-cd audiovideorec/
-l
-ls
-vim index.html 
-exit
-ls
-mv media-recorder-try/ public_html/
-cd public_html/
-ls
-cd media-recorder-try/
-ls
-vim index.html 
-ls
-rm MediaStreamRecorder.js 
-ls
-vim index.html 
-exit
-ls
-mv media-recorder-try/ public_html/
-mv -f media-recorder-try/ public_html/
-cd public_html/
-ls
-rm media-recorder-try/
-rm -rf
-ls
-rm -rf media-recorder-try/
-cd ..
-ls
-mv media-recorder-try/ public_html/
-ls
-ls
-cd public_html/
-ls
-rm media-recorder-try/ unorthodox/
-rm -rf media-recorder-try/ unorthodox/
-ls
-exit
-ls
-mv video.html public_html/
-ls
-rm Vadodara.html 
-ls
-cd public_html/
-ls
-rm ibm.mp4 
-ls
-rm video.html 
-l
-ls
-exit
-ls
-cd public_html/
-ls
-exit
-mv video.html public_html/
-ls
-exit
-ssh mohit@10.3.3.127
-ssh mohit-k53sd@10.3.3.127
-ssh mohit-K53SD@10.3.3.127
-seq 0 7 100|egrep [2,3]|egrep -v "5"|wc -l
-exit
-ls
-mv zoom.html public_html/
-ls
-cd public_html/
-ls
-vim zoom.html 
-rm zoom.html 
-exit
-ls
-mv kurento-one2one-call-advanced/ kurento
-ls
-mv kurento/ public_html/
-cd public_html/
-ls
-cd kurento/
-ls
-ls
-mnv compile exec:java
-sudo apt-get install maven
-apt-get install maven
-exit
-ls
-mv Recorderjs-master/ public_html/vids
-ls
-cd public_html/
-ls
-cd vid
-cd vids/
-ls
-mv example_simple_exportwav.html index.html
-ls
-exit
-ls
-cd public_html/
-ls
-rm -rf vids
-ls
-exit
-ls
-cd public_html/
-ls
-mv lab\ exercise/lab_exercise
-mv lab\ exercise/ lab_exercise
-ls
-cd lab_exercise/
-ls
-ls
-vim omnom.html 
-ls
-vim omnom.html 
-ls
-vim omnom.html 
-vim omnom.html 
-ls -l
-chmod 777 ./*
-ls -l
-exit
-ls
-ls
-mkdir research_logs
-mv output_1-8-15/ research_logs/
-ls
-cd research_logs/
-ls
-vim index.html
-cd ..
-cd public_html/
-ls
-mkdir research_logs
-cd research_logs/
-ls
-mv ../../research_logs/index.html .
-ls
-ls
-cd ..
-cd research_logs/
-vim index.html 
-cp ../../research_logs/output_1-8-15/0.png .
-vim index.html 
-cp -r ../../research_logs/output_1-8-15/ .
-ls
-rm 0.png 
-vim index.html 
-cp -r ../../research_logs/output_1-8-15/ .
-vim index.html 
-ls
-vim index.html 
-ls
-ls -l
-cd output_1-8-15/
-ls -l
-cd ..
-chmod 755 autoencoder-visualize.png 
-ls -l
-chmod 533 autoencoder-visualize.png 
-ls -l
-chmod 755 autoencoder-visualize.png 
-vim index.html 
-ls
-cd public_html/
-ls
-cd research_logs/
-ls
-mv output_1-8-15/ output_1-9-15/
-vim index.html 
-mv autoencoder-visualize.png output_1-9-15/
-ls
-mv index.html autoencoder_010915.html
-cp autoencoder_010915.html index.html
-vim index.html 
-ls
-mkdir static
-ls
-cd static/
-ls
-mkdir images
-cd images/
-mv ~/mohit.jpg .
-ls
-cd ..
-ls
-cd ..
-ls
-vim index.html 
-chmod 555 static/images/mohit.jpg 
-vim index.html 
-clear
-ls
-cd public_html/
-ls
-cd research_logs/
-ls
-cp autoencoder_010915.html autoencoder_160915.html
-vim autoencoder_160915.html 
-ls
-vim index.html 
-vim autoencoder_010915.html 
-vim autoencoder_160915.html 
-vim index.html 
-vim autoencoder_160915.html 
-cd output_16-9-15/
-ls
-mv network_visualization.png network-visualize.png 
-ls -l
-chmod 555 network-visualize.png 
-ls -l
-chmod 444 network-visualize.png 
-ls -l
-chmod 644 network-visualize.png 
-ls -l
-cd ..
-vim autoencoder_160915.html 
-mv output_16-9-15/network-visualize.png output_16-9-15/autoencoder-visualize.png
-vim autoencoder_160915.html 
-vim autoencoder_160915.html 
-vim autoencoder_010915.html 
-vim autoencoder_160915.html 
-cd static/
-ls
-cd ..
-ls
-vim autoencoder_160915.html 
-vim autoencoder_160915.html 
-vim autoencoder_160915.html 
-vim index.html 
-vim autoencoder_160915.html 
-vim autoencoder_160915.html 
-cd public_html/research_logs/
-ls
-cd static/
-ls
-cd c3-0.4.10/
-ls
-cd ..
-ls
-cd d3/
-ls
-cd ..
-ls
-ls -l
-chmod 777 c3-0.4.10/ d3/
-ls
-ls -l
-cd d3/
-ls
-ls -l
-chmod 444 *
-ls -l
-chmod 666 *
-ls -l
-cd ..
-ls
-chmod 666 c3-0.4.10/ d3/
-ls -l
-cd c3-0.4.10/
-chmod 777 c3-0.4.10/ d3/
-ls -l
-cd d3/
-ls
-ls -l
-cd ..
-ls
-cd c3-0.4.10/
-ls
-ls -l
-chmod 666 *
-ls -l
-cd ..
-ls
-cd d3/
-ls
-ls -l
-pwd
-ls
-cd public_html/research_logs/
-ls
-mkdir output_21-9-15
-mv sample_images/ output_21-9-15/
-ls
-cd static/
-ls
-cd ..l
-s
-cd ..ls
-cd ..
-ls
-vim index.html 
-ls
-cd output_21-9-15/
-ls
-cd sample_images/
-ls
-cd ..
-ls
-mkdir 10.0
-mkdir 2.0 3.0 5.0
-ls
-rm -rf sample_images/
-ls
-cd 10.0/
-ls
-cd ..
-ls
-cd 10.0/
-ls
-cd sample_images/
-ls
-cd ../../
-ls
-mkdir 1.0
-ls
-cd 1.0/
-ls
-cd sample_images/
-ls
-cd ../
-cd ..
-ls
-mkdir 4.0
-cd public_html/research_logs/
-ls
-cp autoencoder_010915.html adversarial_210915.html
-vim adversarial_210915.html 
-cd public_html/research_logs/
-ls
-mv losses.txt output_21-9-15/
-cd output_21-9-15/
-ls
-cd ..
-ls
-vim adversarial_210915.html 
-vim autoencoder_160915.html 
-vim adversarial_210915.html 
-vim autoencoder_160915.html 
-vim adversarial_210915.html 
-vim autoencoder_160915.html 
-vim adversarial_210915.html 
-vim index.html 
-ls
-vim adversarial_210915.html 
-cd public_html/research_logs/
-ls
-vim adversarial_210915.html 
-cd public_html/research_logs/
-ls
-cp adversarial_210915.html adversarial_240915.html 
-vim adversarial_240915.html 
-vim index.html 
-vim adversarial_240915.html 
-exit
-ls
-cd public_html/
-ls
-cd research_logs/
-ls
-cp adversarial_240915.html adversarial_270915.html
-vim adversarial_270915.html 
-vim index.html 
-vim adversarial_270915.html 
-vim autoencoder_010915.html 
-vim adversarial_270915.html 
-vim autoencoder_160915.html 
-vim adversarial_270915.html 
-vim adversarial_240915.html 
-vim adversarial_270915.html 
-vim autoencoder_160915.html 
-exit
-cd public_html/research_logs/
-ls
-vim index.html 
-ls
-touch model_300815.html
-vim index.html 
-mv model_300815.html lenet_300915.html
-ls
-cp autoencoder_160915.html lenet_300915.html 
-vim lenet_300915.html 
-mkdir output_30-9-15
-vim lenet_300915.html 
-ls
-cd output_30-9-15/
-ls
-ls -l
-chmod 777 autoencoder-visualize.png 
-cd ..
-ls
-vim lenet_300915.html 
-exit
-cd public_html/research_logs/
-ls
-vim autoencoder_160915.html 
-vim lenet_300915.html 
-ls
-exit
-cd public_html/research_logs/
-ls
-mkdir output_30-9-15
-cd output_30-9-15/
-ls
-cd ..
-ls
-cd output_21-9-15/
-ls
-cd ..
-ls
-cd output_
-cd output_30-9-15/
-ls
-rm -r 1.0/
-ls
-mkdir 1.0 2.0 3.0 4.0 5.0 10.0
-ls
-cd ..
-ls
-cd output_21-9-15/
-ls
-cd 1
-cd 1.0/
-ls
-cd ..
-ls
-cd ..
-ls
-cd 3
-cd output_30-9-15/
-ls
-cd 1
-tree
-cd 1.0/
-ls
-cd sample_images/
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cp adversarial_210915.html adversarial_300915.html
-vim adversarial_300915.html 
-vim index.html 
-vim adversarial_300915.html 
-vim index.html 
-exit
-ls
-pip install gflags
-sudo
-su -s
-su -
-cd public_html/
-ls
-cd research_logs/
-ls
-cd static/
-ls
-cd images/
-ls
-cp mohit.jpg ../../../static/images/
-ls
-cd ..
-ls
-cd ../../
-ls
-cd static/
-ls
-cd images/
-ls
-cd public_html/
-ls
-mv Resume___19Apr_15__Non_research_.pdf Resume_19Apr15_nonResearch.pdf
-mv Resume_19Apr15_nonResearch.pdf static/
-cd static/
-s
-ls
-mkdir other
-mv Resume_19Apr15_nonResearch.pdf other/
-ls
-chmod 777 other/
-ls
-cd other/
-ls
-ls -l
-chmod 777 *
-ls
-ls
-cd public_html/
-ls
-cd lab_exercise/
-ls
-cd ..
-ls
-rm -rf lab_exercise/
-ls
-rm video.html 
-ls
-rm -rf kurento/
-ls
-vim index.html 
-ls
-pwd
-ls
-cd web/
-ls
-cd ..
-ls
 rm index.html 
 ls
 cp web/* .
@@ -998,3 +324,677 @@ cd ..
 ls
 cd public_html/
 ls -l
+ls
+git init
+git add .
+git commit -m "Backup : 23/11/15"
+git remote add origin https://github.com/NightFury13/ResearchWeb.git
+git push -u origin master
+git config --global https.proxy http://proxy.iiit.ac.in:8080
+git push -u origin master
+git config --global http.proxy http://proxy.iiit.ac.in:8080
+git push -u origin master
+exit
+ls
+cd public_html/
+ls
+cd research_logs/
+ls
+cd ..
+ls
+cd ..
+ls
+cd research_logs/
+ls
+cd ..
+ls
+cd web/
+ls
+cd ..
+ls
+mkdir backup
+ls
+mv research_logs/ web backup_public_221115.tar.gz  webstream.html backup
+ls
+cd public_html/research_logs/
+ls
+vim index.html
+cd rbf_nn/
+ls
+cp template_report.html demo_rbfnn_211115.html
+vim demo_rbfnn_211115.html 
+ls
+mkdir output_211115
+mv contour_rbf.jpg rbf_classi_centres.jpg output_211115/
+ls
+vim demo_rbfnn_211115.html 
+ls output_211115/
+vim demo_rbfnn_211115.html 
+ls
+mv ../dataset.jpg output_211115/
+vim demo_rbfnn_211115.html 
+cd ..
+ls
+vim index.html
+cd public_html/research_logs/
+ls
+vim index.html
+exit
+ls
+cd public_html/
+ls
+cd research_logs/
+ls
+vim index.html
+cd rbf_nn/
+vim demo_rbfnn_211115.html 
+ls
+cd public_html/
+ls
+cd research_logs/
+ls
+vim index.html
+mkdir honors
+cd honors/
+ls
+cp ../template_report.html .
+ls
+vim template_report.html 
+mv template_report.html robust_dnn_presentation.html
+ls
+vim robust_dnn_presentation.html 
+cd public_html/research_logs/
+ls
+vim index.html
+cd public_html/
+ls
+vim index.html
+ls
+cd /
+ls
+cd
+ls
+cd public_html/
+ls
+vim index.html
+cda
+ls
+cd public_html/
+ls
+cd research_logs/
+ls
+cd ..
+ls
+cd ..
+ls
+ls -a
+vim .bashrc 
+source .bash
+source .bashrc 
+cdr
+ls
+vim index.html
+lynx mgrades.iiit.ac.in
+lynx http://mgrades.iiit.ac.in
+ssh taship@taship.iiit.ac.in
+cda
+ssh taship@taship.iiit.ac.in -L 8001:localhost:8001
+ssh web2py@10.4.2.208
+cda
+ssho web2py@10.4.2.208
+ssh web2py@10.4.2.208
+ssh web2py@10.4.2.208
+celar
+clear
+ssh web2py@10.4.2.208
+exit
+ssh -X -C web2py@10.4.2.208
+ssh web2py@10.4.2.208
+ssh web2py@10.4.2.208
+ssh web2py@10.4.2.208
+ls
+scp -r __jquery.tablesorter web2py@web2py.iiit.ac.in
+scp -r __jquery.tablesorter web2py@web2py.iiit.ac.in:
+scp -r __jquery.tablesorter web2py@web2py.iiit.ac.in:~
+rm -r __jquery.tablesorter/
+rm -rf __jquery.tablesorter/
+ssh web2py@web2py.iiit.ac.in
+exit
+ssh web2py@web2py.iiit.ac.in
+ssh web2py@web2py.iiit.ac.in
+cdr 
+ls
+c
+clear
+ls
+vim index.html
+ls
+cd static/
+ls
+cd fonts/
+ls
+cd ..
+ls
+cd css/
+ls
+vim style.css 
+cd ..
+ls
+cd ..
+ls
+grep -r "2015" .
+vim index.html
+vim rbf_nn/plan_of_action.html 
+vim rbf_nn/demo_rbfnn_211115.html 
+vim rbf_nn/template_report.html 
+vim template_report.html 
+vim honors/robust_dnn_presentation.html 
+vim index.html
+vim honors/robust_dnn_presentation.html
+vim index.html
+ls
+mkdir adver_images
+vim index.html
+cp template_report.html adver_images/
+cd adver_images/
+ls
+cp template_report.html sample_images.html
+vim sample_images.html 
+vim sample_images.html \
+vim sample_images.html 
+pwd
+ls
+mkdir images
+pwd
+cd images/
+pwd
+ls
+cd test_outputs/
+ls
+mkdir lenet
+mkdir imagenet
+ls
+mv 3.png class0_* lenet/
+ls
+mv class9_56.83%_eps100.jpg lenet/
+ls
+mv jersey-tshirt_18.6%_eps30.jpg tabby-cat_39%_original.jpg wig_79.16%_eps15.jpg imagenet/
+ls
+cd ..
+ls
+mv test_outputs/* .
+ls
+rm test_outputs/
+ls
+rmdir test_outputs/
+ls
+cd ..
+ls
+vim sample_images.html 
+ls
+cd images/
+ls
+ls -
+ls -l
+cd imagenet/
+ls
+ls- l
+ls -l
+chmod 775 *
+ls
+cd ..
+cd lenet/
+ls
+chmod 775 *
+ls
+cd ..
+ls
+cd imagenet/
+ls
+cd ..
+ls
+cd ..
+ls
+vim sample_images.html 
+cd ..
+ls
+vim autoencoder/adversarial_270915.html 
+cd adver_images/
+ls
+vim sample_images.html 
+cd images/
+ls
+cd imagenet/
+pwd
+cd ..
+ls
+cd ..
+vim sample_images.html 
+cd images/
+ls
+cd imagenet/
+ls
+chmod 77 *
+ls
+ls -l
+chmod 777 *
+ls -l
+ls
+mv tabby-cat_39%_original.jpg tabby-cat_39percent_original.jpg 
+q
+cd ..
+ls
+cd ,..
+cd ..
+vim sample_images.html 
+cd ..
+ls
+cd adver_images/images/
+ls
+cd imagenet/
+ls
+mv jersey-tshirt_18.6%_eps30.jpg jersey-tshirt_18.6percent_eps30.jpg 
+mv wig_79.16%_eps15.jpg wig_79.16percent_eps15.jpg 
+q
+vim ../../sample_images.html 
+ls
+vim ../../sample_images.html 
+cd ../lenet/
+ls
+mv class0_49.92%_eps86.jpg class0_49.92per_eps86.jpg 
+ls
+mv class0_54.2%acc_eps90.jpg class0_54.2per_acc_eps90.jpg 
+ls
+mv class9_56.83%_eps100.jpg class9_56.83per_eps100.jpg 
+ls
+vim ../../sample_images.html 
+cdr
+ls
+cd honors/
+ls
+vim robust_dnn_presentation.html 
+cdr
+ls
+cd honors/
+ls
+cd ..
+ls
+vim adver_images/
+cd adver_images/
+ls
+vim sample_images.html 
+pwd
+ls
+mv dog.jpg siamese_cat_21.3per_eps2.jpg images/
+cd images/
+ls
+cd imagenet/
+ls
+cd ..
+ls
+cd ..
+ls
+mv diff.jpg images/
+ls
+cd images/
+ls
+mkdir imagenet_dog
+mv diff.jpg dog.jpg siamese_cat_21.3per_eps2.jpg imagenet_dog/
+ls
+cd imagenet
+ls
+cd ..
+cd imagenet_dog/
+ls
+chmod 777 *
+ls
+cd ..
+ls
+cd ..
+ls
+vim sample_images.html 
+cd images/
+ls
+rm -rf imagenet_dog/
+ls
+mkdir imagenet_tiger
+mv ../tiger_94.2per.jpg ../jigsaw_puzzle_64.26per_eps30.jpg  ../diff.jpg imagenet_tiger/
+ls
+cd ..
+vim sample_images.html 
+cde
+cdr
+ls
+vim index.html
+cd honors/
+ls
+cp ../template_report.html paper_key_points.html
+vim paper_key_points.html 
+vim ../index.html
+vim paper_key_points.html 
+cd ..
+ls
+cd static/
+ls
+cd css/
+ls
+vim style.css 
+cd ..
+cd honors/
+ls
+vim paper_key_points.html 
+cd ..
+ls
+vi index.html
+cdr
+ls
+ls -a
+cd ..
+ls
+ls -a
+cd ..
+ls
+ls -a
+git status .
+cdr
+git status .
+git origin
+git remote
+git remote origin
+git remote
+git remote -v
+git status .
+git add .
+git add -all
+git add --all
+git add --all .
+git commit -m "Update 01/02/16 - Starting VQA"
+git push origin master
+git commit --amend --reset-author
+git config --global user.name NightFury13
+git config --global user.email develop13mohit@gmail.com
+git commit --amend --reset-author
+git push origin master 
+cd
+ls
+ls -a
+vim .bashrc 
+git config --global http.proxy http://proxy.iiit.ac.in:8080
+git config --global https.proxy http://proxy.iiit.ac.in:8080
+git push origin master 
+git config --global https.proxy ''
+git config --global http.proxy ''
+git push origin master 
+git config --global https.proxy http://proxy.iiit.ac.in:8080
+git config --global http.proxy http://proxy.iiit.ac.in:8080
+git push origin master 
+cdr
+ls
+cd vqa/
+ls
+cd adversary_effect/
+ls
+pwd
+ls
+cdr
+ls
+mkdir vqa
+mv adversary_effect/ vqa/
+ls
+cp template_report.html vqa/
+ls
+cd vqa/
+ls
+mv template_report.html adver_effect.html
+ls
+vim adver_effect.html 
+vim ../index.html
+vim adver_effect.html 
+cdr
+cd vqa/
+ls
+vim adver_effect.html 
+cdr
+;
+ls
+mv n0* vqa/
+cd vqa/
+ls
+mv n0* ..
+ls
+cd ..
+ls
+cd adver_images/
+ls
+mkdir iter_advr_images
+mv ../n0* iter_advr_images/
+ls
+cp template_report.html iter_advr_images.html
+ls
+cp sample_images.html iter_advr_images.html 
+ls
+vim iter_advr_images.html 
+ls
+cd ..
+ls
+chmod +x index.html
+ls
+vim index.html
+cd adver_images/
+ls
+cd ..
+ls
+mv adver_images/ advr_images
+vim index.html
+cd advr_images/
+ls
+vim iter_advr_images.html 
+cd ..
+vim index.html
+cdr
+ls
+cd advr_images/
+ls
+cd iter_advr_images/
+ls
+cd n02342885_2396_hamster
+ls
+ls -l
+cd ..
+ls
+chmod 775 *
+ls
+cd n02342885_2396_hamster/
+ls
+ls -l
+chmod 775 *
+ls
+cd //
+cd -
+ls
+cd ..
+ls
+cd n02443114_15963_polecat
+chmod 775 *
+cd ../n02488702_6152_Madagascar_cat
+chmod 775 *
+cd ../n03761084_16515_microwave
+chmod 775 *
+cd ../n02342885_2396_hamster
+ls
+cd ..
+ls
+cd n02342885_2396_hamster/
+chmod 777 *
+ls
+mv advr_eps_4_hamster%0.999898goldfish%0.951991.jpg advr_eps_4_hamster0.999898_goldfish0.951991.jpg 
+ls
+pwd
+cd ..
+ls
+cd ..
+ls
+cd images/
+ls
+cd imagenet
+ls
+ls -l
+ls ../../iter_advr_images/n02342885_2396_hamster/
+ls -l ../../iter_advr_images/n02342885_2396_hamster/
+cd -
+;s
+ls
+cd ..
+l;s
+ls
+ls -l
+chmod 775 iter_advr_images
+ls
+chmod 777 iter_advr_images
+ls -l
+cd i
+cd iter_advr_images/
+ls
+ls -l
+cd n02342885_2396_hamster/
+ls
+cp advr_eps_4_hamster0.999898_goldfish0.951991.jpg adv_img.jpg
+ls
+rm adv_img.jpg 
+ls
+mv advr_eps_4_hamster0.999898_goldfish0.951991.jpg advr_eps_4_hamster999898_goldfish951991.jpg 
+mv advr_eps_4_hamster999898_goldfish951991.jpg advr_eps_4_hamster0.999898_goldfish0.951991.jpg 
+mv diff_eps_4_hamster%0.999898goldfish%0.951991.jpg diff_eps_4_hamsterw0.999898goldfish0.951991.jpg  
+mv diff_eps_4_hamsterw0.999898goldfish0.951991.jpg diff_eps_4_hamster0.999898goldfish0.951991.jpg 
+mv orig_eps_4_hamster%0.999898goldfish%0.951991.jpg orig_eps_4_hamster0.999898goldfish0.951991.jpg 
+cd ..
+ls
+cd n02443114_15963_polecat/
+ls
+mv advr_eps_4_polecat%0.600986goldfish%0.976037.jpg advr_eps_4_polecat0.600986goldfish0.976037.jpg 
+mv diff_eps_4_polecat%0.600986goldfish%0.976037.jpg diff_eps_4_polecat0.600986goldfish0.976037.jpg 
+mv orig_eps_4_polecat%0.600986goldfish%0.976037.jpg orig_eps_4_polecat0.600986goldfish0.976037.jpg 
+ls
+cd ../n02488702_6152_Madagascar_cat
+ls
+mv advr_eps_4_Madagascar_cat%0.331092goldfish%0.942065.jpg advr_eps_4_Madagascar_cat0.331092goldfish0.942065.jpg 
+mv diff_eps_4_Madagascar_cat%0.331092goldfish%0.942065.jpg  diff_eps_4_Madagascar_cat0.331092goldfish0.942065.jpg 
+mv orig_eps_4_Madagascar_cat%0.331092goldfish%0.942065.jpg orig_eps_4_Madagascar_cat0.331092goldfish0.942065.jpg 
+ls
+cd ..
+ls
+cd n03761084_16515_microwave
+ls
+mv advr_eps_4_microwave%0.814508goldfish%0.995405.jpg advr_eps_4_microwave0.814508goldfish0.995405.jpg 
+mv diff_eps_4_microwave%0.814508goldfish%0.995405.jpg diff_eps_4_microwave0.814508goldfish0.995405.jpg 
+mv orig_eps_4_microwave%0.814508goldfish%0.995405.jpg orig_eps_4_microwave0.814508goldfish0.995405.jpg 
+ls
+cdr
+ls
+cd vqa/
+ls
+cp adver_effect.html iter_advr_images.html
+ls
+vim iter_advr_images.html 
+vim adver_effect.html 
+vim iter_advr_images.html 
+cdr
+vim index.html
+cdr
+vim index.html
+cd vqa/
+ls
+cd sample_VQA_results/
+ls
+cdr
+ls
+cd honors/
+ls
+cd ..
+ls
+mkdir general
+ls
+cp template_report.html general/
+ls
+cd general/
+ls
+cp template_report.html prediction_difference.html
+vim prediction_difference.html 
+cd ..
+ls
+cd vqa/
+ls
+vim iter_advr_images.html 
+cd ..
+cd general/
+ls
+vim prediction_difference.html 
+cdr
+ls
+vim index.html
+cdr
+ls
+cd rnn/
+ls
+cd ..
+ls
+vim index.html
+ls
+cd public_html/
+ls
+cd ..
+ls
+cd web2py@web2py.iiit.ac.in/
+ls
+cd ..
+ls
+rm -rf web2py@web2py.iiit.ac.in/
+cd public_html/
+ls
+cd research_logs/
+ls
+mv VQA-Desc.png honors/
+ls
+mv honors/VQA-Desc.png vqa/
+cd vqa/
+ls
+cp adver_effect.html vqa_status.html
+vim vqa_status.html 
+cd ..
+ls
+vim index.html
+cd vqa/
+ls
+vim vqa_status.html 
+cdr
+ls
+cd vqa/
+ls
+vim vqa_status.html 
+cdr
+ls
+mkdir archive
+mv advr_images/ autoencoder/ rbf_nn/ rnn/ vqa/ archive/
+ls
+vim index.html
+ls
+cp index.html archive/
+cp -r static/ archive/
+cd archive/
+ls
+vim index.html 
+vim vqa/vqa_status.html 
+vim index.html 
+cd ..
+ls
+mv general/ honors/ archive/
+ls
+vim index.html
+vim archive/index.html 
+vim index.html
+mkdir LSTM
+cd LSTM/
+ls
+cp ../template_report.html lang-model.html
+ls
+vim lang-model.html 

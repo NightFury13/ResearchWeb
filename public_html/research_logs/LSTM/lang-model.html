@@ -1,0 +1,104 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mohit Jain</title>
+<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script src="../static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+ <link href="../static/css/dashboard.css" rel="stylesheet">
+<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Curriculum Vitae Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+</head>
+<body>
+<!-- header -->
+<div class="col-sm-3 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1><a style="color:white" href="https://researchweb.iiit.ac.in/~mohit.jain">Mohit Jain</a></h1> 
+		 </div>
+		<div class="details">
+			<h3>Language Model</h3> 
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="../static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="../static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--pop-up-box-->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+		 <div class="skills">
+			 <p style="float:right; background-color:#e9a820"><a href="../index.html">Back to Homepage</a></p><br/>
+		 	 <div class="copywrite" style="float:right">
+				 <p>© 2016. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
+			 </div>	
+		 </div>
+		 <div class="company">
+			 <h3 class="clr1">24-27th May'16</h3>
+			 <div class="company_details">
+				 <h4>Understanding RNN's<span></span></h4>
+				 <h6>Creating a sample RNN (LSTM based) in Torch</h6>
+				 <p class="cmpny1">The following are the samples of generated data after the model has been trained only for about 6 hours with a LSTM-RNN unrolled 16 times having 256 internal states on small amounts of News data (WMT 2011 News Crawl Corpus). We can see that the model is already starting to understand the basics of the structure of English language and has started to make semi-meaningful sentences.<br/>
+				 </p>
+				<pre style="white-space:pre-wrap;">on service. we is going that producements to spend she environmental among to linie forces and every islamic all. stremeland directly decisions outtain of getting the gurrounced in sy have also happened of burling out is things for polibuy that is thrilled for the worst an assume and ever site like but he will only he, and have to crashed in the us a late is impeopers. and when it is talked the cu</pre>
+				<br/>
+				<pre style="white-space:pre-wrap;">preserving tunnel has people on end on oraoming she hain which againson. these line for the leveling love of a helping liffing out isolar made. survaniance but is the guoring cheephis held and fire gromenaber july now iraq, but is like assoliciation where the roberted. a langing a group in ord in the states, accountabil some them have been answers: a markaloma keep notial is normal problem prime w</pre>
+				<br/>
+				<pre style="white-space:pre-wrap;">on permits swhere in some areas big not officials for elevated all claimed to intense know and especially milament, very even site his center they yard of fest force into the emergent government said. and father there is things good of astounce leaves dongone. the worth an attract from a britional gatheneding contrement smither, leaved resolutions. a mark. the manufants of the department if the cu</pre>
+				<p class="cmpny1"></p>
+				<br/>
+				<h4>The LSTM Class (torch7 code)</h4>
+				<pre>-- adapted from: wojciechz/learning_to_execute on github
+
+local LSTM = {}
+
+-- Creates one timestep of one LSTM
+function LSTM.lstm(opt)
+    local x = nn.Identity()()
+    local prev_c = nn.Identity()()
+    local prev_h = nn.Identity()()
+
+    function new_input_sum()
+        -- transforms input
+        local i2h            = nn.Linear(opt.rnn_size, opt.rnn_size)(x)
+        -- transforms previous timestep's output
+        local h2h            = nn.Linear(opt.rnn_size, opt.rnn_size)(prev_h)
+        return nn.CAddTable()({i2h, h2h})
+    end 
+
+    local in_gate          = nn.Sigmoid()(new_input_sum())
+    local forget_gate      = nn.Sigmoid()(new_input_sum())
+    local out_gate         = nn.Sigmoid()(new_input_sum())
+    local in_transform     = nn.Tanh()(new_input_sum())
+
+    local next_c           = nn.CAddTable()({
+        nn.CMulTable()({forget_gate, prev_c}),
+        nn.CMulTable()({in_gate,     in_transform})
+    })  
+    local next_h           = nn.CMulTable()({out_gate, nn.Tanh()(next_c)})
+
+    return nn.gModule({x, prev_c, prev_h}, {next_c, next_h})
+end
+
+return LSTM</pre> 
+			 </div>
+		 </div>
+	 </div>
+</div>
+</body>
+</html>

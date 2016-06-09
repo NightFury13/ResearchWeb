@@ -1,0 +1,96 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mohit Jain</title>
+<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script src="../static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+ <link href="../static/css/dashboard.css" rel="stylesheet">
+<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Curriculum Vitae Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+</head>
+<body>
+<!-- header -->
+<div class="col-sm-3 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1><a style="color:white" href="https://researchweb.iiit.ac.in/~mohit.jain">Mohit Jain</a></h1> 
+		 </div>
+		<div class="details">
+			<h3>VQA Adversary</h3> 
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="../static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="../static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--pop-up-box-->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+		 <div class="skills">
+			 <p style="float:right; background-color:#e9a820"><a href="../index.html">Back to Homepage</a></p><br/>
+		 	 <div class="copywrite" style="float:right">
+				 <p>© 2016. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
+			 </div>	
+		 </div>
+		 <div class="company">
+			 <h3 class="clr1">17th - 24th Nov'15</h3>
+			 <div class="company_details">
+				 <h4>VQA Adversaries<span></span></h4>
+				 <h6>Study effects of adversarial perturbations on the VQA Model</h6>
+				 <p class="cmpny1">The adversarial examples created by fooling the CaffeNet (caffe-example) model seem to be beating the VQA model too as expected. However, the type of responses depend quite a bit on the type of question posed as we can see from the samples results below.
+				 </p>
+				 <p><br/>Fooling Image of Dog transformed to a cat prediction : <span style="color:red">VQA Fails</span></p>
+				 <div name="image" width="100%" class="cmpny1">
+					<img src="adversary_effect/dog_advr_0.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+					<img src="adversary_effect/dog_advr_1.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+				 <p><br/>There is however some anamoly with particular class answers from the VQA (jersey/t-shirt for example)</p>
+					<img src="adversary_effect/dog_advr_2.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+				 <p>Non-perturbed cat image.</p>
+					<img src="adversary_effect/ori_cat_0.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+					<img src="adversary_effect/ori_cat_1.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+				 <p><br/><span style="color:red">Fail!</span> Even with this non-perturbed cat image, the VQA answrs for a +ve on the presence of a wig in the image. However, the response depends on the way the question is posed.</p>
+					<img src="adversary_effect/ori_cat_2.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+				 <p><br/>Perturbed cat image transformed to show +ve for class of t-shirts/jersey : <span style="color:red">VQA fails</span></p>
+					<img src="adversary_effect/cat_advr_0.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+					<img src="adversary_effect/cat_advr_1.png" width=100% />
+				 </div>
+				 <div name="image" width="100%" class="cmpny1">
+				<p><br/>Depending on the way the question is posed, the presence of a jersey is either +ve or -ve as in these two cases.<span style="color:red"> What's strange is that the VQA did not classify this image as a t-shirt/jersey while my bvlc-caffenet did!?</span> The idea of fooling images not being a result of poor regularization somehow is not valid over the VQA?</p>
+					<img src="adversary_effect/cat_advr_2.png" width=100% />
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+</div>
+</body>
+</html>

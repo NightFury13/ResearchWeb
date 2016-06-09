@@ -55,6 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--pop-up-box-->			
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	 <div class="content">
+	 	<p style="float:right; background-color:#e9a820"><a href="archive/index.html">Research Log Archives</a></p><br/>
 		 <div class="skills">
 			 <h3 class="clr1">Research Logs</h3>
 			 <div class="skill_info">
@@ -68,160 +69,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 </div>
 		 <div class="company">
 			 <h3 class="clr2">Current Week</h3>
-			<div class="company_details">
-				 <h4>VQA Adversaries<span>25th Jan'16 - Present</span></h4>
-				 <h6>Study effects of adversarial perturbations on the VQA Model<span style="color:red"> DELAYED</span></h6>
-				 <p>
-				...
-				 </p>
-			 </div>
-			<br/> 
-			<h3 class="clr1">Previous Weeks</h3>
-			<div class="company_details">
-				 <h4>Reading & Discussing<span>12th-19th Jan'16</span></h4>
-				 <h6>Conceptual verification of adversarial pipeline<span style="color:green"> On-Time</span></h6>
-				 <p>
-					This week was spent in verifying the adversarial generation methods and the reason for their existence by re-visiting the papers by Szegedy et al. & Goodfellow et al. The major takeaways are summarized in this <a href="honors/paper_key_points.html">page</a>. <br/>
-					> A presentation was given (TRM) to fellow research students at CVIT.<br/><br/>
-				 </p>
-			 </div>
- 
-			<div class="company_details">
-				 <h4>Adversarial Image Generation<span>5th-12th Jan'16</span></h4>
-				 <h6>Correcting Adversarial Image Generation Pipeline<span style="color:green"> On-Time</span></h6>
-				 <p>
-					This week was spent correcting the adversarial image generation routines as further experiments depend heavily on the same for proper functioning and correctness of results.<br/><br/>
-					Completed Tasks :<br/>
-						<span style="padding-left:2%">
-						> Correcting Adversarial Image Generation Pipeline. <a href="adver_images/sample_images.html"> #Fooling Images</a><br/>
-						</span>
-						<span style="padding-left:2%">
-						> <a href="honors/robust_dnn_presentation.html">Summarizing Slides</a> of work till now.<br/>
-						</span><br/> 
-				 </p>
-			 </div>
-			
-
 			 <div class="company_details">
-				 <h4>RBF-Neural Networks<span>8th - 22nd Dec'15</span></h4>
-				 <h6>Evaluating RBF-NN outputs on Deep Network Pipeline <span style="color:red">DELAYED</span></h6>
+				 <h4>Understanding RNN's<span>24-27th May'16</span></h4>
+				 <h6>Creating a sample RNN (LSTM based) in Torch<span style="color:orange"> In-progress</span></h6>
 				 <p>
-					Passing the adversarial images through the RBF-NN and then the Deep Network (LeNet) to check for performance improvements on the adversarial classification.<br/>
-					Expected Tasks :<br/>
-						<span style="padding-left:2%">
-						> Computing RBF-NN intermediate outputs.<br/>
-						</span>
-						<span style="padding-left:2%">
-						> Computing adversaries to the intermediate outptus and checking performance.<br/>
-						</span><br/> 
+					Starting off afresh, these 3 days were spent learning about the functioning of RNN's (specifically LSTMs). I trained a simple language model which generates sentences based on its vocabulary.
+					<br/>
+					<span style="padding-left:4%"><a href="LSTM/lang-model.html">> Performance of Model</a></span><br/>
 				 </p>
 			 </div>
-
- 			 <div class="company_details">
-				 <h4>RBF-Neural Networks<span>1st-8th Dec'15</span></h4>
-				 <h6>Evaluating RBF-NN outputs on Deep Network Pipeline</h6>
-				 <p>
-					Passing the adversarial images through the RBF-NN and then the Deep Network (LeNet) to check for performance improvements on the adversarial classification.<br/>
-					Expected Tasks :<br/>
-						<span style="padding-left:2%">
-						> Computing RBF-NN intermediate outputs.<br/>
-						</span>
-						<span style="padding-left:2%">
-						> Computing adversaries to the intermediate outptus and checking performance.<br/>
-						</span><br/> 
-					Other Idea :<br/>
-						<span style="padding-left:2%">
-						  > Dr. Batra suggessted that as long as we keep using deterministic procedures to pre-process our data, the model can still be gamed. So how about adding random noise to say about 30-40% of the image and then use a denoising-autoencoder on top of it to obtain the rectified image, then apply a deterministic noise-reduction technique and finally pass it to the deep network? This stacked network cannot be gamed using the similar approaches we followed for gaming the previous autoencoder experiments as now the Nash Equilibrium changes and prediction of the output is not possible. (Discuss with mentor prof's) 
-						</span><br/><br/>
-					Miscellaneous :<br/>	
-						<span style="padding-left:2%">
-						> Nvidia DIGITS : Submitted <a href="https://github.com/batra-mlp-lab/DIGITS/pull/7" target="_blank">pull-request</a> for Feature-Extraction tasks.
-						</span><br/>
-						<span style="padding-left:2%">
-						> <a href="honors/robust_dnn_presentation.html">Presentation</a> summarizing work till now.
-						</span><br/>
-				 </p><br/>
-			 </div>
-
-			<!-- End Sem Placeholder -->
-			 <p class="cmpny1"></p>
-			 <p class="cmpny1" style="text-align:center">End-Semester Exams<br/>(24th-30th Nov'15)</p>
-
-			 <div class="company_details">
-				 <h4>RBF-Neural Networks<span>17th-24th Nov'15</span></h4>
-				 <h6>Testing shallow and deep networks</h6>
-				 <p>
-					Building intuition on the working of RBF-Neural Networks with the help of shallow networks while playing around with deep RBF-Layer Neural Networks.<br/>
-					Results : <br/>
-						<span style="padding-left:2%">
-						> <a href="rbf_nn/demo_rbfnn_211115.html">Demo of RBF-NN</a><br/>
-						</span>
-					References :<br/>
-						<span style="padding-left:2%">
-						  > <a href="https://chrisjmccormick.wordpress.com/2013/08/15/radial-basis-function-network-rbfn-tutorial/" target="_blank">RBFN Tutorial - Chris McCormick</a>
-						</span>
-				 </p><br/>
-			 </div>
-			 <div class="company_details">
-				 <h4>RBF-Neural Networks<span>10th-17th Nov'15</span></h4>
-				 <h6>Plan of Action</h6>
-				 <p class="cmpny1">Thorough discussion of the intuition behind using RBF-Neural Networks with Micheal and Dr. Batra.<br/>
-					View : <a href="rbf_nn/plan_of_action.html">Plan of Action</a><br/>
-					Papers :<br/>
-						<span style="padding-left:2%">
-						> <a href="http://arxiv.org/pdf/1412.6572.pdf" target="_blank">Explaining and Harnessing Adversarial Examples - Goodfellow et al.</a><br/>
-						</span>
-						<span style="padding-left:2%">
-						> <a href="http://arxiv.org/pdf/1412.5068v4.pdf" target="_blank">Towards Deep NN Architectures Robust to Adversarial Examples - Gu & Rigazio</a><br/>
-						</span>
-				 </p>
-			 </div>
-			 <div class="company_details">
-				<h4>Autoencoder Networks<span>27th Oct - 3rd Nov'15</span></h4>
-				<h6>Improved Results</h6>
-				<p>Improved accuracy of the base LeNet model and corresponding correction in the results of auto-encoder reconstruction errors.<br/>
-				Results :</br>
-					<span style="padding-left:2%">
-					> <a href="autoencoder/lenet_300915.html">Improved Model</a><br/>
-					</span>
-					<span style="padding-left:2%">
-					> <a href="autoencoder/adversarial_270915.html">Corrected Results</a><br/>
-					</span>
-				</p>
-			</div>
-			<div class="company_details">
-				<h4>Autoencoder Networks<span>20th-27th Oct'15</span></h4>
-				<h6>Adversarial Images & Sanity Checks</h6>
-				<p>Generating Adversarial Images for LeNet on MNIST and performing Sanity checks on them.<br/>
-				Results :</br>
-					<span style="padding-left:2%">
-					> <a href="autoencoder/adversarial_210915.html">Adversarial Images</a><br/>
-					</span>
-					<span style="padding-left:2%">
-					> <a href="autoencoder/adversarial_240915.html">Sanity Checks, Still Faulty</a><br/>
-					</span>
-				</p>
-			</div>
-			<div class="company_details">
-				<h4>Autoencoder Networks<span>13th-20th Oct'15</span></h4>
-				<h6>Improved Autoencoder</h6>
-				<p>Reducing the re-construction error of the base MNIST Autoencoder using Micheals parameters.<br/>
-				Results :</br>
-					<span style="padding-left:2%">
-					> <a href="autoencoder/autoencoder_160915.html">Improved Autoencoder</a><br/>
-					</span>
-				</p>
-			</div>
-			<div class="company_details">
-				<h4>Autoencoder Networks<span>1st-13th Oct'15</span></h4>
-				<h6>Building Autoencoder</h6>
-				<p class="cmpny1">Training Autoencoder on MNIST images using Caffe's training parameters.<br/>
-				Results :</br>
-					<span style="padding-left:2%">
-					> <a href="autoencoder/autoencoder_160915.html">Caffe Autoencoder</a><br/>
-					</span>
-				</p>
-			</div>
 		 </div>
 	 </div>
 </div>

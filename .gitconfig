@@ -1,0 +1,7 @@
+[https]
+	proxy = http://proxy.iiit.ac.in:8080
+[http]
+	proxy = http://proxy.iiit.ac.in:8080
+[user]
+	name = NightFury13
+	email = develop13mohit@gmail.com

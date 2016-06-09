@@ -8,29 +8,43 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/Mohit
+~MSle0~/4th
 
 # Last Substitute Search Pattern:
-~MSle0&output_21-9-15
+~MSle0&#999
 
 # Last Substitute String:
-$output_30-9-15
+$#777
 
 # Command Line History (newest to oldest):
 :q
-:wq
 :w
+:wq
 :set nu
-:W
+:ew
 :we
+:%s/#999/#777/g
+:140
+:q!
+:W
 :%s/output_21-9-15/output_30-9-15/g
 :%s/output_1-9-15/output_21-9-15/g
-:q!
 :%s/output_1-9-15/output_16-9-15/gc
 :%s/output_1-8-15/output_1-9-15/gc
 :q:q:q
 
 # Search String History (newest to oldest):
+?/4th
+?/Present
+?/present
+?/Exam
+?/exam
+?/adver_imag
+?/Title
+? #999
+?/2015
+?/color
+?/OpenCV
 ?/Mohit
 ?/Research Log
 ?/ind
@@ -69,400 +83,887 @@ $output_30-9-15
 
 # Registers:
 "0	LINE	0
-				<div class="company_details">
-					<h4>Autoencoder Networks<span>13th-20th Oct'15</span></h4>
-					<h6>Improved Autoencoder</h6>
-					<p>Reducing the re-construction error of the base MNIST Autoencoder using Micheals parameters.<br/>
-					Results :</br>
-						<span style="padding-left:2%">
-						> <a href="autoencoder/autoencoder_160915.html">Improved Autoencoder</a><br/>
-						</span>
-					</p>
-				</div>
+		 	<p style="float:right; background-color:#e9a820"><a href="../index.html">Back to Current Logs</a></p><br/>
 ""1	LINE	0
-				
+					 		   Details : <a href="rbf_nn/plan_of_action.html">Plan of Action</a>
 "2	LINE	0
-						</span>
+						Report of the understanding of the VQA model and the problems encountered in creation of adversarial inputs for the same.<br/>
 "3	LINE	0
-						> <a href="autoencoder/adversarial_270915.html">Corrected Results</a><br/>
+				
 "4	LINE	0
-						<span style="padding-left:2%">
+				<br/> 
 "5	LINE	0
-			 
+				<h3 class="clr1">Previous Weeks</h3>
 "6	CHAR	0
-	<div class="details_header">
-				 <ul>
-					 <li><a href="static/other/Resume_19Apr15_nonResearch.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Resume</a></li>
-					 <li><a href="static/other/Resume_19Apr15_nonResearch.pdf"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li>
-					 <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>View photo</a></li>
-					 <div id="small-dialog" class="mfp-hide">
-						 <img src="static/images/mohit.jpg" alt=""/>
-					 </div>
-					 <script>
-							$(document).ready(function() {
-							$('.popup-with-zoom-anim').magnificPopup({
-								type: 'inline',
-								fixedContentPos: false,
-								fixedBgPos: true,
-								overflowY: 'auto',
-								closeBtnInside: true,
-								preloader: false,
-								midClick: true,
-								removalDelay: 300,
-								mainClass: 'my-mfp-zoom-in'
-							});
-																							
-							});
-					</script>
-				 </ul>
-			 </div>
-"7	LINE	0
+				 <!-- End Sem Placeholder -->
+				 <p class="cmpny1"></p>
+				 <p class="cmpny1" style="text-align:center">End-Semester Exams<br/>(24th - 29th April'16)</p>
+	
+				<div class="company_details">
+					 <h4>Simple RNN Adversaries<span>23rd Feb - 1st March'16</span></h4>
+					 <h6>Creating simple adversarial inputs for a basic RNN<span style="color:green"></span></h6>
+					 <p>
+						Exploring the Field :<br/>
+						<span style="padding-left:4%"><a href="rnn/caption_gen.html">> Generating captions for images</a></span><br/>
+						<span style="padding-left:4%"><a href="rnn/got_rnn.html">> Generating script for GameOfThrones using char-RNN</a></span><br/>
+						<span style="padding-left:4%"><a href="rnn/min_char_rnn.html">> Generating historic scripts using char-RNN</a></span><br/>
+					 </p>
 				 </div>
+				<br/> 
+		
+				<div class="company_details">
+					 <h4>VQA Iterative Adversaries<span>10th - 16th Feb'16</span></h4>
+					 <h6>Creating Fooling Images for the VQA model using iterative fast-sign Algo<span style="color:green"> On-Time</span></h6>
+					 <p>
+						Compute adversarial images on the <a href="https://gist.github.com/ksimonyan/3785162f95cd2d5fee77" target=_blank>VQA model</a> and check its performance using automated question paraphrasing and evaluate performance. <br/><br/>
+						Done :<br/>
+						<span style="padding-left:4%"><a href="vqa/iter_advr_images.html">> Manual Question Asking Results</a></span>
+						<br/>
+						<span style="padding-left:4%"><a href="general/prediction_difference.html">> Reason for difference in prediction in caffe.Net() and caffe.Classifier()</a></span><span style="color:red"> (Possible Solution?)</span>
+						<br/>
+						To-Do :<br/>
+						<span style="padding-left:4%"><a href="">> Automated Question Generation</a></span>
+					 </p>
+				 </div>
+				<br/> 
+				<div class="company_details">
+					 <h4>Iterative Algo Adversaries<span>2nd - 9th Feb'16</span></h4>
+					 <h6>Creating Adversaries with 90%+ confidence on fooling class<span style="color:green"> On-Time</span></h6>
+					 <p>
+						The Adversarial Images created using an iterative approach which requires much less eps values and gets extremely high confidence on fooling class. <br/>
+						<a href="advr_images/iter_advr_images.html">> Image Results</a><br/>
+						<span style="color:red">> One curious observation this week was that the prediction outputs using caffe.Net() and caffe.Classifier() are different! (discussed in the above results page)</span>
+					 </p>
+				 </div>
+				<br/> 
+	
+				<div class="company_details">
+					 <h4>VQA Adversaries<span>25th Jan'16 - 2nd Feb'16</span></h4>
+					 <h6>Study effects of adversarial perturbations on the VQA Model<span style="color:red"> DELAYED</span></h6>
+					 <p>
+						The Adversarial Images created for previous models beats the VQA model too. <a href="vqa/adver_effect.html">Results</a>
+					 </p>
+				 </div>
+				<br/> 
+"7	LINE	0
+					<h3 class="clr2" style="float:right">Tasks Done</h3>
 "8	LINE	0
-					 <p style="padding-left:10%">10th Board : 9.4 CGPA</p>
+					<h5 class="clr2" style="float:right">Tasks Done</h3>
 "9	LINE	0
-					 <h6>Higher Secondary School</h6>
+				
 "-	CHAR	0
-	<a href="https://github.com/muaz-khan/WebRTC-Experiment/tree/master/RecordRTC"
+	'
 
 # File marks:
-'0  122  0  ~/index.html
-'1  17  0  ~/resume.html
-'2  91  0  ~/webpage temp.html
-'3  140  20  ~/public_html/research_logs/index.html
-'4  124  82  ~/public_html/index.html
-'5  58  57  ~/public_html/research_logs/index.html
-'6  56  19  ~/public_html/research_logs/rbf_nn/plan_of_action.html
-'7  46  105  ~/public_html/research_logs/rbf_nn/plan_of_action.html
-'8  46  37  ~/public_html/research_logs/rbf_nn/template_report.html
-'9  44  0  ~/public_html/research_logs/template_report.html
+'0  102  0  ~/public_html/research_logs/LSTM/lang-model.html
+'1  77  9  ~/public_html/research_logs/index.html
+'2  58  3  ~/public_html/research_logs/archive/index.html
+'3  51  5  ~/public_html/research_logs/index.html
+'4  46  0  ~/public_html/research_logs/archive/vqa/vqa_status.html
+'5  59  3  ~/public_html/research_logs/archive/index.html
+'6  52  6  ~/public_html/research_logs/index.html
+'7  80  760  ~/public_html/research_logs/vqa/vqa_status.html
+'8  70  52  ~/public_html/research_logs/vqa/vqa_status.html
+'9  78  80  ~/public_html/research_logs/index.html
 
 # Jumplist (newest first):
--'  122  0  ~/index.html
--'  1  0  ~/index.html
--'  17  0  ~/resume.html
--'  1  0  ~/resume.html
--'  91  0  ~/webpage temp.html
--'  1  0  ~/webpage temp.html
--'  140  20  ~/public_html/research_logs/index.html
--'  147  5  ~/public_html/research_logs/index.html
--'  58  2  ~/public_html/research_logs/index.html
--'  51  5  ~/public_html/research_logs/index.html
--'  98  12  ~/public_html/research_logs/index.html
--'  67  144  ~/public_html/research_logs/index.html
--'  89  29  ~/public_html/research_logs/index.html
--'  2  15  ~/public_html/research_logs/index.html
--'  38  4  ~/public_html/research_logs/index.html
--'  39  4  ~/public_html/research_logs/index.html
--'  40  4  ~/public_html/research_logs/index.html
--'  41  7  ~/public_html/research_logs/index.html
--'  42  4  ~/public_html/research_logs/index.html
--'  43  4  ~/public_html/research_logs/index.html
--'  44  4  ~/public_html/research_logs/index.html
--'  45  4  ~/public_html/research_logs/index.html
--'  46  4  ~/public_html/research_logs/index.html
--'  47  4  ~/public_html/research_logs/index.html
--'  36  14  ~/public_html/research_logs/index.html
--'  100  4  ~/public_html/research_logs/index.html
--'  124  82  ~/public_html/index.html
--'  63  5  ~/public_html/index.html
--'  56  19  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  61  76  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  60  25  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  55  27  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  54  9  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  70  5  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  46  4  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  20  0  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  46  37  ~/public_html/research_logs/rbf_nn/template_report.html
--'  1  0  ~/public_html/research_logs/rbf_nn/template_report.html
--'  44  0  ~/public_html/research_logs/template_report.html
--'  64  0  ~/public_html/research_logs/template_report.html
--'  1  0  ~/public_html/research_logs/template_report.html
--'  46  89  ~/public_html/research_logs/ind2.html
--'  44  2  ~/public_html/research_logs/ind2.html
--'  1  0  ~/public_html/research_logs/rbf_nn/plan_of_action.html
--'  149  16  ~/public_html/research_logs/autoencoder/lenet_300915.html
--'  1  0  ~/public_html/research_logs/autoencoder/lenet_300915.html
--'  149  16  ~/public_html/research_logs/autoencoder/autoencoder_160915.html
--'  1  0  ~/public_html/research_logs/autoencoder/autoencoder_160915.html
--'  142  16  ~/public_html/research_logs/autoencoder/autoencoder_010915.html
--'  1  0  ~/public_html/research_logs/autoencoder/autoencoder_010915.html
--'  146  16  ~/public_html/research_logs/autoencoder/adversarial_300915.html
--'  1  0  ~/public_html/research_logs/autoencoder/adversarial_300915.html
--'  146  16  ~/public_html/research_logs/autoencoder/adversarial_270915.html
--'  1  0  ~/public_html/research_logs/autoencoder/adversarial_270915.html
--'  137  16  ~/public_html/research_logs/autoencoder/adversarial_240915.html
--'  1  0  ~/public_html/research_logs/autoencoder/adversarial_240915.html
--'  181  15  ~/public_html/research_logs/autoencoder/adversarial_210915.html
--'  182  15  ~/public_html/research_logs/autoencoder/adversarial_210915.html
--'  185  15  ~/public_html/research_logs/autoencoder/adversarial_210915.html
--'  1  0  ~/public_html/research_logs/autoencoder/adversarial_210915.html
--'  95  21  ~/public_html/research_logs/ind2.html
--'  32  75  ~/public_html/research_logs/ind2.html
--'  79  0  ~/public_html/research_logs/ind2.html
--'  72  45  ~/public_html/research_logs/ind2.html
--'  63  9  ~/public_html/research_logs/ind2.html
--'  59  14  ~/public_html/research_logs/ind2.html
--'  71  4  ~/public_html/research_logs/ind2.html
--'  81  6  ~/public_html/research_logs/ind2.html
--'  1  0  ~/public_html/research_logs/ind2.html
--'  1  24  ~/public_html/index.html
--'  37  4  ~/public_html/index.html
--'  208  3  ~/public_html/index.html
--'  41  7  ~/public_html/index.html
--'  153  26  ~/public_html/index.html
--'  156  22  ~/public_html/index.html
--'  163  25  ~/public_html/index.html
--'  164  9  ~/public_html/index.html
--'  105  4  ~/public_html/index.html
--'  103  152  ~/public_html/index.html
--'  102  125  ~/public_html/index.html
--'  86  19  ~/public_html/index.html
--'  98  19  ~/public_html/index.html
--'  133  19  ~/public_html/index.html
--'  62  70  ~/public_html/index.html
--'  89  0  ~/public_html/index.html
--'  19  0  ~/public_html/index.html
--'  96  3  ~/public_html/contact.html
--'  43  21  ~/public_html/contact.html
--'  44  14  ~/public_html/contact.html
--'  1  0  ~/public_html/contact.html
--'  10  0  ~/public_html/index.html
--'  173  1  ~/public_html/research_logs/adversarial_300915.html
--'  172  1  ~/public_html/research_logs/adversarial_300915.html
--'  346  5  ~/public_html/research_logs/adversarial_300915.html
--'  140  20  ~/public_html/research_logs/index.html
--'  147  5  ~/public_html/research_logs/index.html
--'  58  2  ~/public_html/research_logs/index.html
--'  51  5  ~/public_html/research_logs/index.html
--'  98  12  ~/public_html/research_logs/index.html
+-'  102  0  ~/public_html/research_logs/LSTM/lang-model.html
+-'  1  0  ~/public_html/research_logs/LSTM/lang-model.html
+-'  77  9  ~/public_html/research_logs/index.html
+-'  76  87  ~/public_html/research_logs/index.html
+-'  51  0  ~/public_html/research_logs/index.html
+-'  58  3  ~/public_html/research_logs/archive/index.html
+-'  52  0  ~/public_html/research_logs/index.html
+-'  59  3  ~/public_html/research_logs/archive/index.html
+-'  46  0  ~/public_html/research_logs/archive/vqa/vqa_status.html
+-'  1  0  ~/public_html/research_logs/archive/vqa/vqa_status.html
+-'  72  4  ~/public_html/research_logs/archive/index.html
+-'  81  3  ~/public_html/research_logs/archive/index.html
+-'  73  34  ~/public_html/research_logs/archive/index.html
+-'  1  0  ~/public_html/research_logs/archive/index.html
+-'  78  5  ~/public_html/research_logs/index.html
+-'  80  760  ~/public_html/research_logs/vqa/vqa_status.html
+-'  79  45  ~/public_html/research_logs/vqa/vqa_status.html
+-'  70  5  ~/public_html/research_logs/vqa/vqa_status.html
+-'  56  5  ~/public_html/research_logs/vqa/vqa_status.html
+-'  73  5  ~/public_html/research_logs/index.html
+-'  87  4  ~/public_html/research_logs/vqa/vqa_status.html
+-'  1  0  ~/public_html/research_logs/vqa/vqa_status.html
+-'  79  5  ~/public_html/research_logs/index.html
+-'  81  4  ~/public_html/research_logs/index.html
+-'  64  138  ~/public_html/research_logs/general/prediction_difference.html
+-'  61  36  ~/public_html/research_logs/general/prediction_difference.html
+-'  58  5  ~/public_html/research_logs/general/prediction_difference.html
+-'  56  318  ~/public_html/research_logs/vqa/iter_advr_images.html
+-'  70  48  ~/public_html/research_logs/vqa/iter_advr_images.html
+-'  57  14  ~/public_html/research_logs/vqa/iter_advr_images.html
+-'  52  4  ~/public_html/research_logs/vqa/iter_advr_images.html
+-'  1  0  ~/public_html/research_logs/general/prediction_difference.html
+-'  141  3  ~/public_html/research_logs/advr_images/iter_advr_images.html
+-'  126  5  ~/public_html/research_logs/advr_images/iter_advr_images.html
+-'  140  25  ~/public_html/research_logs/advr_images/iter_advr_images.html
+-'  65  63  ~/public_html/research_logs/advr_images/iter_advr_images.html
+-'  59  11  ~/public_html/research_logs/advr_images/iter_advr_images.html
+-'  1  0  ~/public_html/research_logs/advr_images/iter_advr_images.html
+-'  53  32  ~/public_html/research_logs/adver_images/iter_advr_images.html
+-'  1  0  ~/public_html/research_logs/adver_images/iter_advr_images.html
+-'  88  360  ~/public_html/research_logs/vqa/adver_effect.html
+-'  89  5  ~/public_html/research_logs/vqa/adver_effect.html
+-'  56  5  ~/public_html/research_logs/vqa/adver_effect.html
+-'  1  0  ~/public_html/research_logs/vqa/adver_effect.html
+-'  9  0  ~/.bashrc
+-'  70  3  ~/public_html/research_logs/honors/paper_key_points.html
+-'  35  3  ~/public_html/research_logs/honors/paper_key_points.html
+-'  75  12  ~/public_html/research_logs/honors/paper_key_points.html
+-'  52  4  ~/public_html/research_logs/honors/paper_key_points.html
+-'  198  1  ~/public_html/research_logs/static/css/style.css
+-'  141  10  ~/public_html/research_logs/static/css/style.css
+-'  61  13  ~/public_html/research_logs/static/css/style.css
+-'  33  0  ~/public_html/research_logs/static/css/style.css
+-'  59  29  ~/public_html/research_logs/honors/paper_key_points.html
+-'  60  217  ~/public_html/research_logs/honors/paper_key_points.html
+-'  55  8  ~/public_html/research_logs/honors/paper_key_points.html
+-'  54  46  ~/public_html/research_logs/honors/paper_key_points.html
+-'  1  0  ~/public_html/research_logs/honors/paper_key_points.html
+-'  71  36  ~/public_html/research_logs/index.html
+-'  118  17  ~/public_html/research_logs/adver_images/sample_images.html
+-'  125  3  ~/public_html/research_logs/adver_images/sample_images.html
+-'  96  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  130  3  ~/public_html/research_logs/adver_images/sample_images.html
+-'  1  1  ~/public_html/research_logs/adver_images
+-'  55  4  ~/public_html/research_logs/honors/robust_dnn_presentation.html
+-'  48  5  ~/public_html/research_logs/honors/robust_dnn_presentation.html
+-'  67  17  ~/public_html/research_logs/adver_images/sample_images.html
+-'  84  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  83  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  90  41  ~/public_html/research_logs/adver_images/sample_images.html
+-'  91  3  ~/public_html/research_logs/adver_images/sample_images.html
+-'  75  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  95  31  ~/public_html/research_logs/adver_images/sample_images.html
+-'  94  24  ~/public_html/research_logs/adver_images/sample_images.html
+-'  98  24  ~/public_html/research_logs/adver_images/sample_images.html
+-'  102  24  ~/public_html/research_logs/adver_images/sample_images.html
+-'  97  10  ~/public_html/research_logs/adver_images/sample_images.html
+-'  79  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  103  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  99  46  ~/public_html/research_logs/adver_images/sample_images.html
+-'  181  0  ~/public_html/research_logs/autoencoder/adversarial_270915.html
+-'  146  0  ~/public_html/research_logs/autoencoder/adversarial_270915.html
+-'  55  5  ~/public_html/research_logs/adver_images/sample_images.html
+-'  1  0  ~/public_html/research_logs/adver_images/sample_images.html
+-'  68  6  ~/public_html/research_logs/index.html
+-'  35  3  ~/public_html/research_logs/honors/robust_dnn_presentation.html
+-'  48  14  ~/public_html/research_logs/template_report.html
+-'  44  2  ~/public_html/research_logs/template_report.html
+-'  48  14  ~/public_html/research_logs/rbf_nn/template_report.html
+-'  46  4  ~/public_html/research_logs/rbf_nn/template_report.html
+-'  48  14  ~/public_html/research_logs/rbf_nn/demo_rbfnn_211115.html
+-'  70  4  ~/public_html/research_logs/rbf_nn/demo_rbfnn_211115.html
+-'  48  14  ~/public_html/research_logs/rbf_nn/plan_of_action.html
+-'  51  0  ~/public_html/research_logs/rbf_nn/plan_of_action.html
+-'  56  0  ~/public_html/research_logs/rbf_nn/plan_of_action.html
+-'  60  4  ~/public_html/research_logs/index.html
+-'  57  1  ~/public_html/research_logs/static/css/style.css
+-'  77  9  ~/public_html/research_logs/index.html
+-'  76  87  ~/public_html/research_logs/index.html
 
 # History of marks within files (newest to oldest):
 
-> ~/index.html
-	"	122	0
-
-> ~/resume.html
-	"	17	0
-
-> ~/webpage temp.html
-	"	91	0
+> ~/public_html/research_logs/LSTM/lang-model.html
+	"	102	0
+	^	56	405
+	.	56	405
+	+	35	20
+	+	52	34
+	+	54	27
+	+	55	51
+	+	57	0
+	+	56	340
+	+	60	414
+	+	58	9
+	+	60	9
+	+	56	85
+	+	62	445
+	+	63	26
+	+	65	7
+	+	64	8
+	+	98	16
+	+	65	29
+	+	66	65
+	+	56	177
+	+	56	77
+	+	56	187
+	+	56	405
 
 > ~/public_html/research_logs/index.html
-	"	140	20
-	^	140	21
-	.	140	20
-	+	58	72
-	+	58	74
-	+	58	45
-	+	58	3
+	"	77	9
+	^	77	15
+	.	77	0
+	+	81	55
+	+	81	67
+	+	81	23
+	+	81	0
+	+	81	89
+	+	81	0
+	+	81	7
+	+	81	123
+	+	81	0
+	+	81	0
+	+	81	0
+	+	81	35
+	+	81	53
+	+	81	101
+	+	81	57
+	+	81	66
+	+	81	188
+	+	81	70
+	+	81	172
+	+	72	3
+	+	81	11
+	+	81	82
+	+	72	3
+	+	81	0
+	+	81	60
+	+	81	0
+	+	81	0
+	+	81	37
+	+	81	150
+	+	81	48
+	+	81	102
+	+	81	227
+	+	81	42
+	+	81	232
+	+	81	10
+	+	81	114
+	+	81	227
+	+	81	15
+	+	81	31
+	+	81	231
+	+	81	70
+	+	81	9
+	+	81	80
+	+	81	68
+	+	81	4
+	+	81	191
+	+	81	26
+	+	81	170
+	+	81	166
+	+	81	9
+	+	81	79
+	+	81	192
+	+	81	46
+	+	81	114
+	+	72	4
+	+	81	0
+	+	81	3
+	+	81	2
+	+	81	3
+	+	73	30
+	+	74	85
+	+	79	0
+	+	79	31
+	+	79	106
+	+	79	0
+	+	79	0
+	+	79	110
+	+	79	111
+	+	79	111
+	+	79	35
+	+	79	108
+	+	79	108
+	+	79	67
+	+	79	31
+	+	79	63
+	+	79	68
+	+	73	44
+	+	81	3
+	+	81	2
+	+	73	19
+	+	74	84
+	+	81	0
+	+	81	11
+	+	81	78
+	+	79	0
+	+	78	125
+	+	78	0
+	+	78	130
+	+	78	80
+	+	82	0
+	+	81	0
+	+	58	101
+	+	73	40
+	+	74	90
+	+	78	0
+	+	76	195
+	+	78	87
+	+	76	87
+	+	76	0
+	+	77	0
+
+> ~/public_html/research_logs/archive/index.html
+	"	58	3
+	^	58	96
+	.	58	95
+	+	60	43
+	+	72	0
+	+	81	0
+	+	73	0
+	+	81	0
+	+	71	17
+	+	61	2
+	+	61	0
 	+	59	0
-	+	58	70
-	+	58	40
-	+	48	0
-	+	37	0
-	+	66	0
-	+	61	4
-	+	59	33
-	+	61	21
+	+	58	2
+	+	58	95
+
+> ~/public_html/research_logs/archive/vqa/vqa_status.html
+	"	46	0
+
+> ~/public_html/research_logs/vqa/vqa_status.html
+	"	80	760
+	^	80	761
+	.	80	760
+	+	35	12
+	+	52	30
+	+	54	23
+	+	55	75
+	+	87	0
+	+	87	0
+	+	59	26
+	+	58	0
+	+	56	226
+	+	56	90
+	+	56	280
+	+	66	10
+	+	65	31
+	+	64	7
+	+	61	8
+	+	65	569
+	+	65	49
+	+	56	48
+	+	65	836
+	+	62	24
+	+	76	9
+	+	71	10
+	+	70	202
+	+	65	52
+	+	65	324
+	+	65	599
+	+	67	9
+	+	70	52
+	+	70	304
+	+	70	141
+	+	70	352
+	+	75	33
+	+	70	41
+	+	75	137
+	+	72	9
+	+	75	639
+	+	86	9
+	+	79	3
+	+	76	4
+	+	77	4
+	+	78	4
+	+	86	4
+	+	79	46
+	+	80	222
+	+	52	23
+	+	80	582
+	+	80	349
+	+	80	867
+	+	80	577
+	+	80	911
+	+	82	45
+	+	81	23
+	+	82	47
+	+	83	10
+	+	82	34
+	+	85	8
+	+	84	492
+	+	84	146
+	+	65	550
+	+	80	760
+
+> ~/public_html/research_logs/general/prediction_difference.html
+	"	64	138
+	^	64	139
+	.	64	138
+	+	35	27
+	+	52	32
+	+	54	42
+	+	55	74
+	+	57	445
+	+	58	108
+	+	57	267
+	+	61	116
+	+	62	4
+	+	61	45
+	+	62	129
+	+	60	8
+	+	61	0
+	+	63	144
+	+	63	13
+	+	64	138
+
+> ~/public_html/research_logs/vqa/iter_advr_images.html
+	"	56	318
+	^	56	319
+	.	56	319
+	+	35	36
+	+	52	31
+	+	86	0
+	+	54	27
+	+	55	9
+	+	56	97
+	+	57	16
+	+	86	6
+	+	52	22
+	+	57	9
+	+	86	0
+	+	61	34
+	+	57	49
+	+	63	34
+	+	62	96
+	+	57	10
+	+	58	0
+	+	60	0
+	+	58	0
+	+	57	0
+	+	59	9
 	+	65	0
-	+	63	4
-	+	64	4
-	+	65	3
-	+	64	33
-	+	58	3
-	+	72	27
-	+	73	41
-	+	72	44
+	+	67	25
+	+	68	36
+	+	69	27
+	+	70	36
+	+	72	0
+	+	74	25
+	+	75	43
+	+	76	87
+	+	77	46
+	+	79	0
+	+	81	34
+	+	82	37
+	+	83	97
+	+	84	37
+	+	83	97
+	+	56	319
+
+> ~/public_html/research_logs/vqa/adver_effect.html
+	"	52	32
+	^	52	33
+	.	52	32
+	+	35	19
+	+	54	22
+	+	55	9
+	+	56	276
+	+	59	37
+	+	61	10
+	+	60	58
+	+	59	21
+	+	62	0
+	+	63	41
+	+	65	0
+	+	67	41
+	+	69	0
+	+	71	40
+	+	73	0
+	+	74	41
+	+	76	0
+	+	78	41
+	+	74	38
+	+	78	38
+	+	80	0
+	+	82	34
+	+	84	0
+	+	87	0
+	+	85	41
+	+	89	41
+	+	58	108
+	+	58	6
+	+	58	105
+	+	58	12
+	+	65	51
+	+	66	117
+	+	70	35
+	+	77	221
+	+	77	130
+	+	81	85
+	+	88	366
+	+	52	32
+
+> ~/public_html/research_logs/advr_images/iter_advr_images.html
+	"	141	3
+	^	115	37
+	.	141	0
+	+	61	125
+	+	58	8
+	+	57	35
+	+	64	172
+	+	65	0
+	+	64	123
+	+	62	17
+	+	66	225
+	+	67	11
+	+	66	31
+	+	69	0
+	+	74	34
+	+	75	25
+	+	83	22
+	+	85	27
+	+	83	0
 	+	85	0
-	+	84	8
-	+	76	70
-	+	148	0
-	+	67	4
-	+	67	4
-	+	68	1
-	+	61	14
-	+	70	39
-	+	59	18
-	+	70	27
-	+	86	39
-	+	70	32
-	+	74	7
+	+	82	0
+	+	85	0
+	+	74	92
+	+	82	92
+	+	85	92
+	+	74	90
+	+	82	73
+	+	85	81
+	+	85	0
+	+	77	0
+	+	75	33
+	+	79	35
+	+	139	0
+	+	127	0
+	+	128	34
+	+	133	0
+	+	137	0
+	+	132	0
+	+	136	0
+	+	128	96
+	+	132	96
+	+	136	96
+	+	129	33
+	+	133	35
+	+	140	0
+	+	140	10
+	+	140	0
+	+	73	3
+	+	74	4
+	+	75	5
+	+	76	0
+	+	77	1
+	+	78	2
+	+	79	3
+	+	80	4
+	+	81	0
+	+	82	1
+	+	83	2
+	+	84	3
+	+	85	4
+	+	86	1
+	+	87	2
+	+	88	3
+	+	87	4
+	+	88	0
+	+	127	1
+	+	128	2
+	+	129	3
+	+	130	4
+	+	131	0
+	+	132	1
+	+	133	2
+	+	134	3
+	+	135	4
+	+	136	5
+	+	137	0
+	+	138	1
+	+	126	0
+	+	126	0
+	+	90	0
+	+	92	41
+	+	96	0
+	+	100	0
+	+	101	0
+	+	97	0
+	+	92	110
+	+	96	110
+	+	100	110
+	+	93	41
+	+	97	36
+	+	108	0
+	+	110	58
+	+	111	0
+	+	114	0
+	+	118	0
+	+	114	0
+	+	110	102
+	+	114	102
+	+	118	102
+	+	111	36
+	+	115	36
+	+	141	0
+	+	141	0
+
+> ~/public_html/research_logs/adver_images/iter_advr_images.html
+	"	53	32
+	^	53	33
+	.	35	37
+	+	35	37
+
+> ~/.bashrc
+	"	9	0
+	^	9	14
+	.	9	13
+	+	9	13
+
+> ~/public_html/research_logs/honors/paper_key_points.html
+	"	70	3
+	^	35	23
+	.	35	22
+	+	54	28
+	+	65	0
+	+	55	9
+	+	57	23
+	+	58	66
+	+	59	50
+	+	57	7
+	+	55	0
+	+	55	61
+	+	56	31
+	+	52	27
+	+	59	138
+	+	59	33
+	+	58	33
+	+	64	4
+	+	60	177
+	+	59	28
+	+	60	37
+	+	63	14
+	+	60	35
+	+	60	547
+	+	60	1
+	+	63	2
+	+	62	8
+	+	67	0
+	+	68	99
+	+	69	125
+	+	66	8
+	+	70	344
+	+	69	120
+	+	72	376
+	+	73	37
+	+	72	369
+	+	73	80
+	+	74	165
+	+	73	84
+	+	74	268
+	+	35	22
+
+> ~/public_html/research_logs/static/css/style.css
+	"	198	1
+	^	141	11
+	.	132	0
+	+	61	0
+	+	141	10
+	+	132	0
+
+> ~/public_html/research_logs/adver_images/sample_images.html
+	"	118	17
+	^	118	18
+	.	118	17
+	+	64	110
+	+	66	10
+	+	91	38
+	+	66	14
+	+	125	8
+	+	125	0
+	+	94	26
+	+	97	9
+	+	95	58
+	+	94	36
+	+	95	49
+	+	98	38
+	+	99	46
+	+	98	38
+	+	94	43
+	+	92	8
+	+	98	41
+	+	94	55
+	+	98	54
+	+	102	0
+	+	103	62
+	+	96	32
+	+	94	25
+	+	98	27
+	+	102	27
+	+	91	44
+	+	96	8
+	+	100	35
+	+	104	44
+	+	91	39
+	+	67	0
+	+	86	8
+	+	67	33
+	+	71	26
+	+	75	26
+	+	79	23
+	+	96	25
+	+	95	31
+	+	94	23
+	+	98	23
+	+	96	0
+	+	70	23
+	+	74	23
+	+	78	23
+	+	87	7
+	+	71	42
+	+	72	31
+	+	75	34
+	+	76	34
+	+	75	65
+	+	86	0
+	+	82	0
+	+	85	9
+	+	87	12
+	+	89	0
+	+	68	55
+	+	91	0
+	+	92	0
+	+	90	0
+	+	91	55
+	+	79	68
+	+	80	33
+	+	86	0
+	+	87	22
+	+	88	0
+	+	83	50
+	+	84	34
+	+	67	189
 	+	67	0
 	+	68	0
-	+	67	39
-	+	67	0
-	+	84	13
-	+	90	8
-	+	88	49
-	+	89	22
-	+	90	119
-	+	99	13
-	+	90	125
-	+	91	72
-	+	94	141
-	+	97	143
-	+	94	7
-	+	97	7
-	+	82	165
-	+	82	10
-	+	147	0
-	+	102	72
-	+	110	78
-	+	99	9
-	+	113	8
-	+	78	69
-	+	79	12
-	+	77	32
-	+	81	35
-	+	83	12
-	+	93	35
-	+	98	12
-	+	95	0
-	+	96	0
-	+	102	19
-	+	106	5
-	+	108	11
-	+	109	5
-	+	111	11
-	+	61	6
-	+	67	20
-	+	58	0
-	+	58	0
-	+	32	45
-	+	113	9
-	+	114	2
-	+	115	38
-	+	116	41
-	+	117	59
-	+	120	70
-	+	123	79
-	+	127	3
-	+	128	38
-	+	129	27
-	+	130	97
-	+	135	0
-	+	133	72
-	+	147	2
-	+	147	0
-	+	137	0
-	+	147	0
-	+	138	37
-	+	139	16
-	+	140	76
-	+	143	58
-	+	140	20
-
-> ~/public_html/index.html
-	"	92	33
-	^	124	83
-	.	124	82
-	+	143	10
-	+	139	33
-	+	143	13
-	+	141	16
-	+	163	27
-	+	147	19
-	+	149	15
-	+	150	14
-	+	151	24
-	+	152	15
-	+	163	25
-	+	163	4
-	+	163	35
-	+	163	26
-	+	163	20
-	+	163	22
-	+	164	8
-	+	163	0
-	+	162	0
-	+	156	5
-	+	146	22
-	+	156	0
-	+	162	75
-	+	147	31
-	+	153	26
-	+	163	0
-	+	144	20
-	+	135	235
-	+	147	20
-	+	113	230
-	+	41	83
-	+	40	74
-	+	41	6
-	+	60	29
-	+	61	18
-	+	169	82
-	+	170	54
-	+	171	222
-	+	176	133
-	+	181	28
-	+	181	0
-	+	172	8
-	+	174	13
-	+	174	8
-	+	176	0
-	+	174	7
-	+	176	6
-	+	174	28
-	+	177	38
-	+	174	28
-	+	175	12
-	+	180	27
-	+	192	12
-	+	179	9
-	+	180	23
-	+	190	14
-	+	192	4
-	+	193	0
-	+	176	33
-	+	174	29
-	+	177	32
-	+	180	24
-	+	182	32
-	+	183	32
-	+	186	32
-	+	188	32
-	+	189	32
-	+	172	28
-	+	173	9
-	+	203	19
-	+	204	31
-	+	206	0
-	+	203	47
-	+	194	0
-	+	196	57
-	+	197	37
-	+	198	29
-	+	205	32
-	+	200	22
-	+	199	0
-	+	198	30
-	+	205	30
-	+	194	4
-	+	195	3
-	+	194	8
-	+	208	49
-	+	46	0
-	+	38	0
-	+	36	14
-	+	37	24
-	+	38	3
-	+	37	30
-	+	144	0
-	+	63	121
-	+	63	52
-	+	121	0
-	+	122	43
-	+	123	33
+	+	130	0
+	+	125	7
+	+	130	0
+	+	130	0
+	+	130	0
 	+	125	0
-	+	124	82
+	+	126	0
+	+	127	0
+	+	130	26
+	+	96	35
+	+	113	46
+	+	114	19
+	+	113	50
+	+	115	10
+	+	125	9
+	+	120	38
+	+	121	41
+	+	122	22
+	+	124	38
+	+	124	66
+	+	124	40
+	+	124	9
+	+	93	27
+	+	110	9
+	+	124	0
+	+	116	0
+	+	106	8
+	+	107	0
+	+	108	0
+	+	118	17
+
+> ~/public_html/research_logs/honors/robust_dnn_presentation.html
+	"	55	4
+	.	55	0
+	+	55	171
+	+	35	18
+	+	48	14
+	+	54	270
+	+	55	0
+
+> ~/public_html/research_logs/autoencoder/adversarial_270915.html
+	"	181	0
+	^	146	17
+	.	146	14
+	+	146	14
+
+> ~/public_html/research_logs/template_report.html
+	"	48	14
+	^	48	15
+	.	48	14
+	+	48	14
+
+> ~/public_html/research_logs/rbf_nn/template_report.html
+	"	48	14
+	^	48	15
+	.	48	14
+	+	46	37
+	+	48	14
+
+> ~/public_html/research_logs/rbf_nn/demo_rbfnn_211115.html
+	"	48	14
+	^	48	15
+	.	48	14
+	+	35	24
+	+	52	40
+	+	54	160
+	+	54	0
+	+	54	23
+	+	57	0
+	+	54	298
+	+	56	59
+	+	59	12
+	+	54	290
+	+	56	4
+	+	55	12
+	+	59	31
+	+	57	9
+	+	59	200
+	+	59	103
+	+	58	18
+	+	61	9
+	+	58	18
+	+	60	24
+	+	58	15
+	+	59	63
+	+	70	4
+	+	59	73
+	+	60	21
+	+	62	0
+	+	66	0
+	+	63	5
+	+	64	4
+	+	63	6
+	+	67	5
+	+	68	4
+	+	67	6
+	+	68	39
+	+	64	31
+	+	59	0
+	+	60	1
+	+	63	2
+	+	64	6
+	+	67	4
+	+	64	6
+	+	63	6
+	+	60	5
+	+	59	5
+	+	70	0
+	+	67	51
+	+	63	44
+	+	71	46
+	+	74	34
+	+	75	43
+	+	76	10
+	+	77	34
+	+	78	41
+	+	79	11
+	+	81	8
+	+	75	6
+	+	78	6
+	+	76	15
+	+	73	150
+	+	70	19
+	+	68	48
+	+	70	10
+	+	48	14
 
 > ~/public_html/research_logs/rbf_nn/plan_of_action.html
-	"	56	19
-	^	56	20
-	.	56	19
+	"	48	14
+	^	48	15
+	.	48	14
 	+	33	0
 	+	35	19
 	+	47	0
@@ -498,334 +999,4 @@ $output_30-9-15
 	+	56	53
 	+	56	159
 	+	56	19
-
-> ~/public_html/research_logs/rbf_nn/template_report.html
-	"	46	37
-	^	46	38
-	.	46	37
-	+	46	37
-
-> ~/public_html/research_logs/template_report.html
-	"	44	0
-
-> ~/public_html/research_logs/ind2.html
-	"	46	89
-	^	46	90
-	.	46	89
-	+	60	2
-	+	62	0
-	+	62	3
-	+	44	23
-	+	51	0
-	+	52	21
-	+	62	0
-	+	51	0
-	+	45	0
-	+	51	0
-	+	45	0
-	+	52	31
-	+	45	0
-	+	45	0
-	+	45	0
-	+	45	0
-	+	47	7
-	+	49	1
-	+	48	2
-	+	47	43
-	+	54	34
-	+	52	0
-	+	55	55
-	+	57	50
-	+	56	124
-	+	60	0
-	+	59	10
-	+	59	3
-	+	59	0
-	+	60	0
-	+	60	18
-	+	60	0
-	+	60	8
-	+	60	39
-	+	60	22
-	+	60	127
-	+	32	30
-	+	62	0
-	+	60	0
-	+	60	24
-	+	52	28
-	+	60	34
-	+	52	31
-	+	60	41
-	+	60	24
-	+	60	43
-	+	60	108
-	+	60	72
-	+	60	79
-	+	60	8
-	+	58	8
-	+	60	8
-	+	60	20
-	+	60	67
-	+	60	8
-	+	60	0
-	+	60	23
-	+	60	43
-	+	60	37
-	+	60	0
-	+	60	30
-	+	60	37
-	+	60	141
-	+	60	32
-	+	60	32
-	+	60	0
-	+	60	27
-	+	60	21
-	+	60	23
-	+	60	52
-	+	60	121
-	+	60	42
-	+	60	58
-	+	60	28
-	+	60	17
-	+	60	17
-	+	60	17
-	+	60	17
-	+	60	17
-	+	57	70
-	+	48	0
-	+	47	0
-	+	60	0
-	+	62	0
-	+	40	14
-	+	41	15
-	+	11	14
-	+	13	15
-	+	15	15
-	+	16	14
-	+	33	0
-	+	35	0
-	+	35	0
-	+	11	12
-	+	13	13
-	+	15	13
-	+	16	12
-	+	40	12
-	+	41	14
-	+	46	89
-
-> ~/public_html/research_logs/autoencoder/lenet_300915.html
-	"	149	16
-	^	149	17
-	.	149	14
-	+	149	14
-
-> ~/public_html/research_logs/autoencoder/autoencoder_160915.html
-	"	149	16
-	^	149	17
-	.	149	14
-	+	149	14
-
-> ~/public_html/research_logs/autoencoder/autoencoder_010915.html
-	"	142	16
-	^	142	17
-	.	142	14
-	+	142	14
-
-> ~/public_html/research_logs/autoencoder/adversarial_300915.html
-	"	146	16
-	^	146	17
-	.	146	14
-	+	146	14
-
-> ~/public_html/research_logs/autoencoder/adversarial_270915.html
-	"	146	16
-	^	146	17
-	.	146	14
-	+	146	14
-
-> ~/public_html/research_logs/autoencoder/adversarial_240915.html
-	"	137	16
-	^	146	17
-	.	146	14
-	+	146	14
-
-> ~/public_html/research_logs/autoencoder/adversarial_210915.html
-	"	181	15
-	^	185	18
-	.	181	0
-	+	136	14
-	+	138	13
-	+	139	13
-	+	146	14
-	+	181	15
-	+	182	15
-	+	181	0
-
-> ~/public_html/contact.html
-	"	96	3
-	^	98	20
-	.	96	0
-	+	11	12
-	+	13	19
-	+	15	19
-	+	16	18
-	+	34	20
-	+	53	18
-	+	54	19
-	+	33	17
-	+	38	17
-	+	40	85
-	+	43	18
-	+	44	23
-	+	46	25
-	+	43	0
-	+	45	19
-	+	96	180
-	+	98	13
-	+	96	0
-
-> ~/public_html/research_logs/adversarial_300915.html
-	"	173	1
-	^	171	57
-	.	171	56
-	+	146	107
-	+	181	0
-	+	164	67
-	+	165	78
-	+	172	0
-	+	170	0
-	+	152	1
-	+	153	0
-	+	152	142
-	+	171	56
-
-> ~/public_html/research_logs/lenet_300915.html
-	"	183	17
-	^	183	18
-	.	183	17
-	+	149	48
-	+	154	13
-	+	158	15
-	+	157	20
-	+	159	21
-	+	161	20
-	+	162	26
-	+	163	18
-	+	166	25
-	+	175	0
-	+	174	178
-	+	174	16
-	+	173	0
-	+	183	29
-	+	184	22
-	+	191	0
-	+	188	20
-	+	183	10
-	+	166	30
-	+	184	17
-	+	183	17
-
-> ~/public_html/research_logs/autoencoder_160915.html
-	"	172	14
-	^	172	15
-	.	172	14
-	+	227	0
-	+	228	0
-	+	231	0
-	+	232	0
-	+	235	0
-	+	236	0
-	+	159	16
-	+	160	17
-	+	161	25
-	+	162	56
-	+	161	66
-	+	160	68
-	+	161	71
-	+	162	22
-	+	161	29
-	+	182	0
-	+	181	28
-	+	149	45
-	+	141	42
-	+	135	0
-	+	137	28
-	+	140	23
-	+	141	30
-	+	151	22
-	+	151	0
-	+	151	6
-	+	151	8
-	+	151	6
-	+	140	13
-	+	141	13
-	+	140	25
-	+	151	0
-	+	166	1
-	+	167	0
-	+	168	0
-	+	169	0
-	+	170	0
-	+	171	0
-	+	172	0
-	+	173	0
-	+	173	11
-	+	175	8
-	+	173	11
-	+	176	0
-	+	177	0
-	+	178	1
-	+	179	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	0
-	+	188	5
-	+	188	10
-	+	188	15
-	+	188	20
-	+	188	25
-	+	188	30
-	+	188	35
-	+	188	40
-	+	188	0
-	+	188	0
-	+	188	0
-	+	190	0
-	+	191	0
-	+	188	0
-	+	189	0
-	+	191	25
-	+	173	0
-	+	172	418
-	+	172	921
-	+	172	18
-	+	175	5
-	+	173	2
-	+	175	10
-	+	175	5
-	+	175	38
-	+	175	2
-	+	175	4
-	+	175	11
-	+	176	11
-	+	176	12
-	+	176	8
-	+	175	2
-	+	176	8
-	+	174	18
-	+	175	0
-	+	176	0
-	+	165	47
-	+	172	19
-	+	149	92
-	+	165	6
-	+	193	38
-	+	172	14
+	+	48	14

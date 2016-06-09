@@ -1,0 +1,92 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mohit Jain</title>
+<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script src="../static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+ <link href="../static/css/dashboard.css" rel="stylesheet">
+<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Curriculum Vitae Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+</head>
+<body>
+<!-- header -->
+<div class="col-sm-3 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1><a style="color:white" href="https://researchweb.iiit.ac.in/~mohit.jain">Mohit Jain</a></h1> 
+		 </div>
+		<div class="details">
+			<h3>Status</h3> 
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="../static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="../static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--pop-up-box-->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+		 <div class="skills">
+			 <p style="float:right; background-color:#e9a820"><a href="../index.html">Back to Homepage</a></p><br/>
+		 	 <div class="copywrite" style="float:right">
+				 <p>© 2016. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
+			 </div>	
+		 </div>
+		 <div class="company">
+			 <h3 class="clr1">3rd May'16</h3>
+			 <div class="company_details">
+				 <h4>VQA Task Status<span></span></h4>
+				 <h6>Current Status of the task of generation adversaries for VQA model.</h6>
+				 <p class="cmpny1" style="text-align:justify">The VQA architecture is a combination of 3 different model pipelines, one for question-inputs, one for image-inputs, and the third to handle the multimodal common embedding of question-image input features. Below is a schematic description of the VQA system.
+				 </p>
+				 <div name="image" width="100%" class="cmpny1">
+					<img src="VQA-Desc.png" width=100% />
+				 </div>
+				<br/>
+				<div name="VQA desc">
+				 <div name="question-pipeline" width="100%">
+					<h4>Question Pipeline :</h4>
+					<p style="padding-left:4%; text-align:justify">> The question-bag is first preprocessed and converted to a vocabulary of question words using tokenization and clipping of the question to a max-length of 26 words, adding UNK tokens to denote the ending of a question or question words exceeding the 26-word limit. <br/>> Now, these variable length questions are coverted to a fix-length representation using the <i>Embedding Model</i>, which is a sequential network adding a linear transform on the input-question words to output a 200 dimensional feature vector representing the question words.<br/>> Next, these fixed-length feature vectors are fed to a LSTM-network, the <i>Encoder-RNN</i>, a 2 layer network with 512 nodes in each layer. This layer outputs a 2*(512*2) point feature-vector to be fed as input to the <i>Multimodal Model</i>.</p>
+				 </div>
+				 <br/>
+				 <div name="image-pipeline" width="100%">
+					<h4>Image Pipeline :</h4>
+					<p style="padding-left:4%; text-align:justify">> The images are transaformed to 224x224 dimensions to be passed to the deep-network.<br/> > The image features are created using the <a href="https://gist.github.com/ksimonyan/3785162f95cd2d5fee77" target="blank">VGG-ILSVCR-19 layer model</a> (specifically the last fc-layer). These 4096 dimensional image-features are then passed on to the multimodal network.
+				 </div>
+				 <br/>
+				 <div name="multi-modal-pipeline" width="100%">
+					<h4>MultiModal Pipeline :</h4>
+					<p style="padding-left:4%; text-align:justify">> The multimodal network has been described in the cloud-box in the above figure.<br/>> The question feature (2048 dimensional) is converted to a 1024 dimensional feature using Linear transformation (affine).<br/>> Similarly, image-features (4096 dimensional) are coverted to 1024 dimensional feature vectors.<br/>> These 1024 dimensional question and image features are then fused together using <i>element-wise multiplication</i> to form a single 1024 dimensional feature vector which is finally fed to classification-model to predict the answer to the question based on the image.<br/>
+				 </div>
+				 <br/><br/>
+				 <div name="problem" width="100%">
+					<h4 style="color:red">The Road-Block</h4>
+					<p style="padding-left:4%; text-align:justify"> For any deep-network, an adversarial input can be created by tuning the input vector according to the adversarial-target's weight updates propogated upto the input-layer. However, the VQA model gets tricky because it is a combination of 3 model (as discussed in the above 3 pipelines).<br/><br/>> We can compute the adversarial input features to the multimodal-network just as any other CNN by replacing the target-class with the adversarial class and performing input-vector updates based on the weight updates propogated to the input layer.<br/>> However, the problem is that the adversarial-feature thus obtained is a fusion of the image and question features (fused via element-wise multiplcation). So, we cannot determine directly the parts of the corresponding image-feature and the question-feature that need to change.<br/><br/> For example sake,</p>
+					<div name="ex-img">
+						<img style="padding-left:10%"src="prob-example.png" />
+					</div>
+					<p style="padding-left:4%; text-align:justify">> Hence, the individual adversarial-image/question-features cannot be found directly.<br/><br/> If we can find the adversarial-image feature, we can continue with our general approach of finding the adversarial input by placing this adversarial-image feature found as the last-fc layer of the VGG-19-layer network and hence find the weight updates required at the input layer to get the adversarial image for a specific question to the VQA model.
+					</p>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+</div>
+</body>
+</html>

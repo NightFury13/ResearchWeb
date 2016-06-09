@@ -1,0 +1,145 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mohit Jain</title>
+<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script src="../static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+ <link href="../static/css/dashboard.css" rel="stylesheet">
+<link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Curriculum Vitae Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+</head>
+<body>
+<!-- header -->
+<div class="col-sm-3 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1><a style="color:white" href="https://researchweb.iiit.ac.in/~mohit.jain">Mohit Jain</a></h1> 
+		 </div>
+		<div class="details">
+			<h3>Fooling Images (Iterative Algo)</h3> 
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="../static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="../static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--pop-up-box-->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+		 <div class="skills">
+			 <p style="float:right; background-color:#e9a820"><a href="../index.html">Back to Homepage</a></p><br/>
+		 	 <div class="copywrite" style="float:right">
+				 <p>© 2016. All Rights Reseverd | <a href="" target="mailto:mohit.jain@research.iiit.ac.in">Mohit Jain</a> </p>
+			 </div>	
+		 </div>
+		 <div class="company">
+			 <h3 class="clr1">2nd - 9th Feb'16</h3>
+			 <div class="company_details">
+				 <h4>Iterative Algo Adversaries<span></span></h4>
+				 <h6>High fooling class confidence images</h6>
+				 <p class="cmpny1">The fast-sign algorithm when applied in an iterative fashion yields much better results as compared to the straight forward one-go-with-high-eps value. For any image, a fooling class confidence of atleast 90% (96% on average) can be achieved in about 5 iterations with an eps value as low as 4 (as compared to the 30 or more being used for the single-shot version). The results of this approach can be seen below.<br/><br/>
+					<span style="padding-left:10%;">
+						> There are two ways of getting the confidence measures (predictions) of a model on input in caffe. 
+					</span><br/>
+					<span style="padding-left:20%"> > Using a net=caffe.Classifier() and then doing a net.predict()</span><br/>
+					<span style="padding-left:20%"> > Using a net=caffe.Net() and then getting values of last layer : net.blobs['prob'].data
+				 	</span><br/>
+					<span style="padding-left:10%; color:red">
+						> ISSUE : While the second method is fooled as expected from the fooling algo, the first approach seems to be robust!
+				 	</span>
+					<span style="padding-left:20%"> > <a href="https://groups.google.com/forum/#!topic/caffe-users/ApD180RMDy8" target=_blank>Link1</a> <a href="https://github.com/BVLC/caffe/issues/3667" target=_blank>Link2</a> to discussion.
+					</span>
+			 </div><br/>
+			<h3 class="clr2">CaffeNet on ImageNet</h3>
+			<div name="images" style="padding-left:5%; width:100%">
+				<br/>
+				<div style="width:100%">
+					<div style="width:33%; float:left;">
+						<img src="iter_advr_images/n02342885_2396_hamster/orig_eps_4_hamster0.999898goldfish0.951991.jpg"/>
+						<p>Original : Hamster : 99.98%</p>
+					</div>	
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n02342885_2396_hamster/advr_eps_4_hamster0.999898_goldfish0.951991.jpg"/>
+						<p>Perturbed : Goldfish : 95.19%</p>
+					</div>
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n02342885_2396_hamster/diff_eps_4_hamster0.999898goldfish0.951991.jpg"/>
+						<p>Difference Map</p>
+					</div>	
+					<br/>
+					<br/><br/><br/><br/>
+					<br/><br/><br/><br/>
+					<br/><br/><br/><br/>
+				</div>
+				<div style="width:100%">
+					<div style="width:33%; float:left;">
+						<img src="iter_advr_images/n02488702_6152_Madagascar_cat/orig_eps_4_Madagascar_cat0.331092goldfish0.942065.jpg"/>
+						<p>Original : Madagascar Cat : 33.12%</p>
+					</div>	
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n02488702_6152_Madagascar_cat/advr_eps_4_Madagascar_cat0.331092goldfish0.942065.jpg"/>
+						<p>Perturbed : Goldfish : 94.20%</p>
+					</div>
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n02488702_6152_Madagascar_cat/diff_eps_4_Madagascar_cat0.331092goldfish0.942065.jpg"/>
+						<p>Difference Map</p>
+					</div>	
+					<br/>
+					<br/><br/><br/><br/>
+					<br/><br/><br/><br/>
+					<br/><br/><br/><br/>
+				</div>
+				<div style="width:100%">
+					<div style="width:33%; float:left;">
+						<img src="iter_advr_images/n03761084_16515_microwave/orig_eps_4_microwave0.814508goldfish0.995405.jpg"/>
+						<p>Original : Microwave : 81.45%</p>
+					</div>	
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n03761084_16515_microwave/advr_eps_4_microwave0.814508goldfish0.995405.jpg"/>
+						<p>Perturbed : Goldfish : 99.54%</p>
+					</div>
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n03761084_16515_microwave/diff_eps_4_microwave0.814508goldfish0.995405.jpg"/>
+						<p>Difference Map</p>
+					</div>	
+					<br/>
+					<br/><br/><br/><br/>
+					<br/><br/><br/><br/>
+					<br/><br/><br/><br/>
+				</div>
+				<div width="100%">
+					<div style="width:33%; float:left;">
+						<img src="iter_advr_images/n02443114_15963_polecat/orig_eps_4_polecat0.600986goldfish0.976037.jpg"/>
+						<p>Original : Polecat : 60.09%</p>
+					</div>	
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n02443114_15963_polecat/advr_eps_4_polecat0.600986goldfish0.976037.jpg"/>
+						<p>Perturbed : Goldfish : 97.60%</p>
+					</div>
+					<div style="width:33%; float:right">
+						<img src="iter_advr_images/n02443114_15963_polecat/diff_eps_4_polecat0.600986goldfish0.976037.jpg"/>
+						<p>Difference Map</p>
+					</div>	
+				</div>
+			</div>
+		 </div>
+	 </div>
+</div>
+</body>
+</html>
