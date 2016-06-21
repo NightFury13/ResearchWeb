@@ -1,26 +1,3 @@
-rm index.html 
-ls
-cp web/* .
-cp -r web/* .
-ls
-chmod 777 fonts/*
-chmod 777 js/*
-chmod 777 css/*
-chmod 777 images/*
-chmod 777 fonts/*
-vim index.html 
-ls
-mv web/ ../
-ls
-mkdir static
-ls
-mv fonts/ images/ js/ css/ static/
-ls
-ls -l
-chmod +x index.html contact.html 
-vim index.html 
-ls
-cd static/
 ls
 ls -l
 chmod 777 *
@@ -998,3 +975,26 @@ ls
 cp ../template_report.html lang-model.html
 ls
 vim lang-model.html 
+ls
+ls -a
+git status .
+git add .
+git add -all .
+git add --all .
+git commit -m "updating pages with archives for VT, OCR-RNN tasks begin"
+git push origin master 
+ccdr
+cdr
+ls
+vim archive/autoencoder/lenet_300915.html 
+ls
+cd in
+vim index.html
+mkdir BLSTM
+ls
+cp template_report.html BLSTM/
+ls
+cd BLSTM/
+ls
+mv template_report.html gpu_vs_cpu.html
+vim gpu_vs_cpu.html 
