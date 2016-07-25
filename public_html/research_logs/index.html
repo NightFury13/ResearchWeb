@@ -70,16 +70,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="company">
 			<h3 class="clr2">Current Updates</h3>
 			<div class="company_details">
+				<h4 id="blstm-rnn-on-ocr">Scene-Text Tasks Started<span>20-26th July'16</span></h4>
+				<h6>Using the oxford dataset, code for BiLSTM-RNN is complete<span style="color:orange"> In-Progress</span></h6>
+				<p class="cmpny1">
+				Using the modules created for OCR tasks, the code for Scene-Text tasks on the oxford dataset have been completed and tested for a small number of training data. 
+				<br/>
+				<i> <b>Halted Currently</b> : for comparing the results of OCR-trained-model with original OCR-model to make sure that the codes and training are indeed bug free and atleast equivalent in performance.</i>
+				</p>
+			</div>
+			<div class="company_details">
+				<h4 id="blstm-rnn-on-ocr">GPU now has 100x speedup!<span>20-26th July'16</span></h4>
+				<h6>Updated codes for incorporation of batch-sizing<span style="color:green"> Done</span></h6>
+				<p>
+				With proper batch-size, the codes now run about 100x faster than before! The current bottleneck turns out to be the old GPU (node14 - K40c). 
+				<br/>
+				<pre>
+<b>Performance Statistics Comparison</b>
+			<b>Online Mode	Batch Mode</b>
+ >  Per-sample Time	~10sec		~0.1sec
+ >  Epoch Time		~16hours	~10mins  [For a 6000 sample epoch]
+
+ >  Mean Error (CTC)	~153		~4481 (for batch of 32) (so per sample error : ~140)
+				</pre>
+				</p>
+			</div>
+			<br/><br/>
+			 <h3 class="clr1">Previous Updates</h3>
+			<div class="company_details">
+				<h4 id="blstm-rnn-on-ocr">Identified GPU-Speedup Issue<span>12-19th July'16</span></h4>
+				<h6>Problem for slower speeds of GPU is the batchsize<span style="color:green"> Done</span></h6>
+				<p>
+				With proper batch-size, we can utilize the GPU capabilities to full extent.
+				<br/>
+				<span style="padding-left:4%"><a href="BLSTM/gpu_vs_cpu_v2.html">> GPU v/s CPU statistics</a></span></br/>	 
+				</p>
+			</div>
+			<div class="company_details">
 				<h4 id="blstm-rnn-on-ocr">Training BLSTM-RNN on OCR-Data<span>1st-21st June'16</span></h4>
-				<h6>Creating modules for a Bi-Sequencer LSTM based RNN model in Torch<span style="color:orange"> In-Progress</span></h6>
+				<h6>Creating modules for a Bi-Sequencer LSTM based RNN model in Torch<span style="color:green"> Done</span></h6>
 				<p>
 				Created modular classes for easy integration into various problem definitions. The model has been made GPU runable.
 				<br/>
 				<span style="padding-left:4%"><a href="BLSTM/gpu_vs_cpu.html">> GPU v/s CPU statistics</a></span></br/>	 
 				</p>
 			</div>
-			<br/><br/>
-			 <h3 class="clr1">Previous Updates</h3>
 			 <div class="company_details">
 				 <h4 id="understanding-rnn">Understanding RNN's<span>24-31st May'16</span></h4>
 				 <h6>Creating a sample RNN (LSTM based) in Torch<span style="color:green"> Done</span></h6>
