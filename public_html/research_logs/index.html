@@ -70,12 +70,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="company">
 			<h3 class="clr2">Current Updates</h3>
 			<div class="company_details">
+                                <h4 id="blstm-rnn-on-ocr">Improvement in Scenetext performance with raw-features<span>21-27th Sept'16</span></h4>
+                                <h6>Improvement and Insights into AlexGraves CPU codes<span style="color:green"> Done</span></h6>
+                                <p>
+					The major factor for performance improvement turns out be more data for training (120k samples instead of the 10k samples initially). We get around 25% edit-distance accuracy now with raw-image-features itself using the 3-layer-BiLSTM+CTC model.
+				<br/><br/>
+				<b>RESULTS :</b><br/> 
+                                <span style="padding-left:4%"><a href="SceneText/alexgraves_cpu_codes_moredata.html">> CPU Codes Outputs (Improved)</a></span></br/>
+                                <br/>
+				<b>To-Do :</b><br/>
+				<span style="padding-left:4%">> The seq-error (all chars correctly predicted) is still close to 100%. See how to improve on this.</span></br> 
+                                <span style="padding-left:4%">> Normalise the features? Seems to improve performance in various papers.</span></br/>
+                                <span style="padding-left:4%">> Use better features now. (normalised-HOG?, CNN?)</span></br/>
+                                <br/>
+                                </p>
+                        </div>
+			<h3 class="clr1">Previous Updates</h3>
+			<div class="company_details">
+                                <h4 id="blstm-rnn-on-ocr">Alex-Graves CPU Codes train well for OCR, not Scene-Text<span>14-20th Sept'16</span></h4>
+                                <h6>Evaluation of AlexGraves CPU codes <span style="color:green"> Done</span></h6>
+                                <p>
+					The AlexGraves CPU codes were used to train a Bi-directional-LSTM based RNN with CTC error-criterion. The model trains well for english-OCR tasks. However, for english-scenetext task, the performance is extremely poor. 
+				<br/><br/>
+				<b>RESULTS :</b><br/> 
+                                <span style="padding-left:4%"><a href="SceneText/alexgraves_cpu_codes.html">> CPU Codes Outputs</a></span></br/>
+                                <br/>
+                                </p>
+                        </div>
+
+			<div class="company_details">
+                                <h4 id="blstm-rnn-on-ocr">OCR works on fixed dimensional Images<span>6-13th Sept'16</span></h4>
+                                <h6>Evaluation of the RNN+CTC modules in smaller steps<span style="color:green"> Done</span></h6>
+                                <p class="cmpny1">
+					The RNN+CTC model <i>(simple LSTM+CTC, not bi-directional)</i> trains very well using raw image grayscale inputs of fixed dimensions (height X widht) for OCR (digits recognition) task. The training method however doesn't scale well at all for Scene-Text tasks of varying image widths (different sequence lengths).
+				<br/>
+				<b>RESULTS :</b><br/> 
+                                <span style="padding-left:4%"><a href="SceneText/fixed_dim_ocr.html">> OCR Fixed-Dim Results</a></span></br/>
+                                <br/>
+                                </p>
+                        </div>
+
+			 <div class="company_details">
+                                <h4 id="blstm-rnn-on-ocr">RNN's fail to learn OCR/Scene-Text<span>9-16th Aug'16</span></h4>
+                                <h6>Evaluation of the RNN+CTC modules<span style="color:magenta"> Halted</span></h6>
+                                <p>
+					The outputs of the models for OCR as well as Scene-Text tasks are coming out to be repetition of a single character. Unable to locate the bug causing these anamolous behaviour but sure that it is a bug as even the END-OF-SEQUENCE character is not being learnt by the model (does not appear in the predictions).
+                                <br/>
+                                </p>
+<pre style="white-space:pre-wrap;"  class="cmpny1">
+* Find and fix this bug *
+
+Since I've been unable to rectify this bug for quite some time now. I plan on writing code based on a CPU-compatible widely used CTC implementation. I want to make sure that the way I prepare and feed the data to the RNN is correct.
+
+  >> If the bug is found in data-preparation routines, it would be a small task replicating the fix in our current codes.
+
+  >> If the bug isn't found in the data-prep routines, it would imply a bug in either the CTC-library itself or in the way I am using it. In either case, this would require understanding the CTC-library code in depth and rectifying the issue.
+</pre>
+                        </div>
+			<div class="company_details">
 				<h4 id="blstm-rnn-on-ocr">Scene-Text Tasks Started<span>20-26th July'16</span></h4>
-				<h6>Using the oxford dataset, code for BiLSTM-RNN is complete<span style="color:orange"> In-Progress</span></h6>
+				<h6>Using the oxford dataset, code for BiLSTM-RNN is complete<span style="color:red"> Failed</span></h6>
 				<p class="cmpny1">
 				Using the modules created for OCR tasks, the code for Scene-Text tasks on the oxford dataset have been completed and tested for a small number of training data. 
 				<br/>
-				<i> <b>Halted Currently</b> : for comparing the results of OCR-trained-model with original OCR-model to make sure that the codes and training are indeed bug free and atleast equivalent in performance.</i>
+				<i> <b>Halted (initially)</b> : for comparing the results of OCR-trained-model with original OCR-model to make sure that the codes and training are indeed bug free and atleast equivalent in performance.</i>
 				</p>
 			</div>
 			<div class="company_details">
@@ -84,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>
 				With proper batch-size, the codes now run about 100x faster than before! The current bottleneck turns out to be the old GPU (node14 - K40c). 
 				<br/>
-				<pre>
+				<pre  class="cmpny1">
 <b>Performance Statistics Comparison</b>
 			<b>Online Mode	Batch Mode</b>
  >  Per-sample Time	~10sec		~0.1sec
@@ -94,12 +152,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</pre>
 				</p>
 			</div>
-			<br/><br/>
-			 <h3 class="clr1">Previous Updates</h3>
+
 			<div class="company_details">
 				<h4 id="blstm-rnn-on-ocr">Identified GPU-Speedup Issue<span>12-19th July'16</span></h4>
 				<h6>Problem for slower speeds of GPU is the batchsize<span style="color:green"> Done</span></h6>
-				<p>
+				<p class="cmpny1">
 				With proper batch-size, we can utilize the GPU capabilities to full extent.
 				<br/>
 				<span style="padding-left:4%"><a href="BLSTM/gpu_vs_cpu_v2.html">> GPU v/s CPU statistics</a></span></br/>	 
@@ -108,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="company_details">
 				<h4 id="blstm-rnn-on-ocr">Training BLSTM-RNN on OCR-Data<span>1st-21st June'16</span></h4>
 				<h6>Creating modules for a Bi-Sequencer LSTM based RNN model in Torch<span style="color:green"> Done</span></h6>
-				<p>
+				<p class="cmpny1">
 				Created modular classes for easy integration into various problem definitions. The model has been made GPU runable.
 				<br/>
 				<span style="padding-left:4%"><a href="BLSTM/gpu_vs_cpu.html">> GPU v/s CPU statistics</a></span></br/>	 
@@ -117,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="company_details">
 				 <h4 id="understanding-rnn">Understanding RNN's<span>24-31st May'16</span></h4>
 				 <h6>Creating a sample RNN (LSTM based) in Torch<span style="color:green"> Done</span></h6>
-				 <p>
+				 <p class="cmpny1">
 					Starting off afresh, these 3 days were spent learning about the functioning of RNN's (specifically LSTMs). I trained a simple language model which generates sentences based on its vocabulary.
 					<br/>
 					<span style="padding-left:4%"><a href="LSTM/lang-model.html">> Performance of Model</a></span><br/>
